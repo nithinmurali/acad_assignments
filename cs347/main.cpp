@@ -19,6 +19,8 @@
 
 int parentpid = 0;
 sem_t query_buff_mutex;
+pthread_mutex_t threads_info_mutex;
+
 
 //sharede buffer
 typedef struct buffer
@@ -137,6 +139,17 @@ struct current_threads{
 
 char* id = "aaaaaaaaaa";
 
+void generate_id(char *dest, size_t length) {
+    char charset[] = "0123456789"
+                     "abcdefghijklmnopqrstuvwxyz"
+                     "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+
+    while (length-- > 0) {
+        size_t index = (double) rand() / RAND_MAX * (sizeof charset - 1);
+        *dest++ = charset[index];
+    }
+    *dest = '\0';
+}
 
 //the query handler thread
 void *query_handler(void *t) 
@@ -161,8 +174,10 @@ void *query_handler(void *t)
     sleep(10);
 
     //acknowledge that it has completed
-    kill(getpid(),10);
-
+    pthread_mutex_lock (&threads_info_mutex);
+    threads_info.removeid(my_id);
+    pthread_mutex_unlock (&threads_info_mutex);
+    
     pthread_exit(NULL);
 }
 
@@ -176,7 +191,7 @@ void query_maker()
     while(1)
     {
         //generate query
-        id = id+1;
+        generate_id(id, 10);
         
        //attemp data push or wait
         int flag = 0;
@@ -288,11 +303,17 @@ int main (int argc, char *argv[])
                 //generate threads
                 struct thred_data t;
                 t.data = data;
-                t.id = 
+                pthread_mutex_lock (&threads_info_mutex);
+                t.id = threads_info.getid();
+                pthread_mutex_unlock (&threads_info_mutex);
+
                 int rc = pthread_create(&threads[t], NULL, query_handler, (void *) &);
                 if (!rc)
                 {
                     printf("cant create thread !!! \n");
+                    pthread_mutex_lock (&threads_info_mutex);
+                    threads_info.removeid(t.id);
+                    pthread_mutex_unlock (&threads_info_mutex);
                 }
             }
 
