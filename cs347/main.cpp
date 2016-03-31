@@ -10,8 +10,7 @@
 #include <signal.h>
 #include <string.h>
 #include <unistd.h>
-
-
+#include <semaphore.h>
 
 #define QNUM 50
 #define pnum 5
@@ -21,6 +20,7 @@ int parentpid = 0;
 sem_t query_buff_mutex;
 pthread_mutex_t threads_info_mutex;
 
+static sigset_t   signal_mask;
 
 //sharede buffer
 typedef struct buffer
@@ -31,16 +31,21 @@ typedef struct buffer
         long pid;
     }queries[QNUM];
     
-    int size = QNUM;
-    int top = 0;
+    int size;
+    int top;
 
-    int push(char *dat, long pid)
+    buffer()
+    {
+        size = QNUM;
+        top = 0;
+    }
+
+    int push(char dat[], long pid)
     {
         if(top != size)
         {
-            queries[top].data = *dat;
+            strcpy(dat, queries[top].data);
             queries[top].pid = pid;
-            
             top++;
             return 0;
         }
@@ -48,14 +53,14 @@ typedef struct buffer
             return 1;
     }
 
-    int pop(char *data, long* spid)
+    int pop(char data[], long* spid)
     {
         if(top != 0)
         {
-            *data = queries[top-1].data;
+            strcpy(queries[top-1].data, data);
             *spid = queries[top-1].pid;
             top--;
-            return 0
+            return 0;
         }
         else
         {
@@ -66,11 +71,17 @@ typedef struct buffer
 }query_buff;
 
 //keep track of processes
-typedef struct pidbuff
+struct pidbuff
 {
     long pids[pnum];
-    int size = QNUM;
-    int top = 0;
+    int size;
+    int top;
+
+    pidbuff()
+    {
+        size = QNUM;
+        top = 0;
+    }
 
     int push(long pid)
     {
@@ -88,9 +99,9 @@ typedef struct pidbuff
     {
         if(top != 0)
         {
-            spid = pids[top-1];
+            *spid = pids[top-1];
             top--;
-            return 0
+            return 0;
         }
         else
         {
@@ -102,12 +113,13 @@ typedef struct pidbuff
 
 //padd dat ati threads
 struct thread_data{
-   int  thread_id;
-   char *data;
+   int  id;
+   char data[10];
 };
 
 //to keep track of threads
-struct current_threads{
+struct current_threads
+{
     bool active[tnum];
     
     current_threads()
@@ -134,10 +146,11 @@ struct current_threads{
     {
         active[id] = 0;
     }
-
 }threads_info;
 
-char* id = "aaaaaaaaaa";
+query_buff *queries;
+struct sigaction act;
+
 
 void generate_id(char *dest, size_t length) {
     char charset[] = "0123456789"
@@ -157,7 +170,7 @@ void *query_handler(void *t)
     int i;
     struct thread_data *my_data;
     my_data = (struct thread_data *) t;
-    long my_id = (long)my_data->thread_id;
+    long my_id = (long)my_data->id;
    
     printf("Starting query handler(): thread %ld ; query %s\n", my_id, my_data->data);
 
@@ -184,21 +197,21 @@ void *query_handler(void *t)
 //the query maker process
 void query_maker() 
 {
-  //long my_id = (long)t;
-
-    printf("Starting query maker(): process \n");
+ 
+    printf("Starting query maker(): process %d\n", getpid());
 
     while(1)
     {
+        char id[10] = "aabbccdde";
         //generate query
-        generate_id(id, 10);
+        //generate_id(&id, 10);
         
        //attemp data push or wait
         int flag = 0;
         while(1)
         {
             sem_wait(&query_buff_mutex);
-            flag = buff.push(id,getpid()) != 0
+            flag = queries->push(id,getpid());
             sem_post(&query_buff_mutex);
             
             if (flag == 0)
@@ -225,7 +238,6 @@ void query_maker()
 }
 
 
-struct sigaction act;
 void sighandler(int signum, siginfo_t *info, void *ptr)
 {
     printf("Main thread : Received signal %d\n", signum);
@@ -240,24 +252,24 @@ void sighandler(int signum, siginfo_t *info, void *ptr)
     {
         //wake a  query maker process
         long spid;
-        pid_buff.pop(spid);
-        kill(spid, SIGCONT)
+        pid_buff.pop(&spid);
+        kill(spid, SIGCONT);
     }
 }
 
+    
 int main (int argc, char *argv[])
 {
-    
     //initalize shared memory
     int id;
-    query_buff *queries;
-    id = shmget(key, N * sizeof(FILE_entry), IPC_CREAT | 0644);
+    key_t key = 12222;
+    id = shmget(key, sizeof(query_buff), IPC_CREAT | 0644);
     if (id < 0) {
         printf("shmget error\n");
         exit(1);
     }
     queries = (query_buff *) shmat(id, NULL, 0);
-    sem_init(&mutex, 1, 1);
+    sem_init(&query_buff_mutex, 1, 1);
 
     parentpid = getpid();
     int childpid[pnum];
@@ -269,13 +281,12 @@ int main (int argc, char *argv[])
         childpid[i] = cpid;
     }
 
-
-    if(getpid == parentpid)
+    if(getpid() == parentpid)
     {
         //action for parent process
         
         //set the signal handler for pid queue
-        signal(SIGINT, sig_handler);
+        signal(SIGINT, sighandler);
         memset(&act, 0, sizeof(act));
         act.sa_sigaction = sighandler;
         act.sa_flags = SA_SIGINFO;
@@ -284,15 +295,18 @@ int main (int argc, char *argv[])
         //create threads
         pthread_t threads[tnum];
 
+        int flag=0;
         while(1)
         {
-            char data*;
+            char data[10];
             long spid;
             
             //fetch data
+            printf("fetching data from buffer \n");
             sem_wait(&query_buff_mutex);
-            flag = buff.pop(data,spid);
+            flag = queries->pop(data,&spid);
             sem_post(&query_buff_mutex);
+            
             if(flag != 0)
             {
                 sleep(1);
@@ -301,13 +315,13 @@ int main (int argc, char *argv[])
             else
             {
                 //generate threads
-                struct thred_data t;
-                t.data = data;
+                struct thread_data t;
+                strcpy(data, t.data);
                 pthread_mutex_lock (&threads_info_mutex);
                 t.id = threads_info.getid();
                 pthread_mutex_unlock (&threads_info_mutex);
 
-                int rc = pthread_create(&threads[t], NULL, query_handler, (void *) &);
+                int rc = pthread_create(&threads[t], NULL, query_handler, (void *) &t);
                 if (!rc)
                 {
                     printf("cant create thread !!! \n");
@@ -316,10 +330,9 @@ int main (int argc, char *argv[])
                     pthread_mutex_unlock (&threads_info_mutex);
                 }
             }
-
         }
 
-        pthread_exit(NULL);
+        exit(0);
     }
     else
     {
