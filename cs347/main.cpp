@@ -20,6 +20,7 @@
 int parentpid = 0;
 sem_t query_buff_mutex;
 
+//sharede buffer
 typedef struct buffer
 {
     struct querry
@@ -62,6 +63,7 @@ typedef struct buffer
 
 }query_buff;
 
+//keep track of processes
 typedef struct pidbuff
 {
     long pids[pnum];
@@ -96,10 +98,42 @@ typedef struct pidbuff
 
 }pid_buff;
 
+//padd dat ati threads
 struct thread_data{
    int  thread_id;
    char *data;
 };
+
+//to keep track of threads
+struct current_threads{
+    bool active[tnum];
+    
+    current_threads()
+    {
+        for (int i = 0; i < tnum; ++i)
+        {
+            active[i] = 0;
+        }
+    }
+
+    int getid()
+    {
+        for (int i = 0; i < tnum ; ++i)
+        {
+            if (active[i] == 0)
+            {
+                active[i] = 1;
+                return i;
+            }
+        }
+    }
+
+    void removeid(int id)
+    {
+        active[id] = 0;
+    }
+
+}threads_info;
 
 char* id = "aaaaaaaaaa";
 
@@ -108,13 +142,26 @@ char* id = "aaaaaaaaaa";
 void *query_handler(void *t) 
 {
     int i;
-    long my_id = (long)t;
     struct thread_data *my_data;
     my_data = (struct thread_data *) t;
+    long my_id = (long)my_data->thread_id;
    
-    printf("Starting query handler(): thread %ld ; query %s\n", my_id);
+    printf("Starting query handler(): thread %ld ; query %s\n", my_id, my_data->data);
 
+    //do dummy compute
+    int result;
+    for (int i = 0; i < 10000; ++i)
+    {
+        for (int j = 0; j < 1000; ++j)
+        {
+            result = i*j;
+        }
+    }
 
+    sleep(10);
+
+    //acknowledge that it has completed
+    kill(getpid(),10);
 
     pthread_exit(NULL);
 }
@@ -131,8 +178,7 @@ void query_maker()
         //generate query
         id = id+1;
         
-        //TODO use mutex ;
-        //attemp data push or wait
+       //attemp data push or wait
         int flag = 0;
         while(1)
         {
@@ -167,13 +213,20 @@ void query_maker()
 struct sigaction act;
 void sighandler(int signum, siginfo_t *info, void *ptr)
 {
-    printf("Received signal %d\n", signum);
-    printf("Signal originates from process %lu\n",
+    printf("Main thread : Received signal %d\n", signum);
+    printf("Main thread : Signal originates from process %lu\n",
         (unsigned long)info->si_pid);
     if (signum == 30)
     {
         //append process pid to wakr buffer
         pid_buff.push((long)info->si_pid);
+    }
+    else if(signum == 10)
+    {
+        //wake a  query maker process
+        long spid;
+        pid_buff.pop(spid);
+        kill(spid, SIGCONT)
     }
 }
 
@@ -190,7 +243,6 @@ int main (int argc, char *argv[])
     }
     queries = (query_buff *) shmat(id, NULL, 0);
     sem_init(&mutex, 1, 1);
-
 
     parentpid = getpid();
     int childpid[pnum];
@@ -230,17 +282,19 @@ int main (int argc, char *argv[])
             {
                 sleep(1);
                 continue;
-            }else
+            }
+            else
             {
-            //generate threads
+                //generate threads
                 struct thred_data t;
                 t.data = data;
                 t.id = 
                 int rc = pthread_create(&threads[t], NULL, query_handler, (void *) &);
+                if (!rc)
+                {
+                    printf("cant create thread !!! \n");
+                }
             }
-
-
-
 
         }
 
@@ -251,8 +305,4 @@ int main (int argc, char *argv[])
         //action for maker processes
         query_maker();
     }
-
-    
-    pthread_exit(NULL);
-
 }
