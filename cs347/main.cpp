@@ -286,7 +286,7 @@ int main (int argc, char *argv[])
         //action for parent process
         
         //set the signal handler for pid queue
-        signal(SIGINT, sighandler);
+        //signal(SIGINT, sighandler);
         memset(&act, 0, sizeof(act));
         act.sa_sigaction = sighandler;
         act.sa_flags = SA_SIGINFO;
@@ -321,7 +321,7 @@ int main (int argc, char *argv[])
                 t.id = threads_info.getid();
                 pthread_mutex_unlock (&threads_info_mutex);
 
-                int rc = pthread_create(&threads[t], NULL, query_handler, (void *) &t);
+                int rc = pthread_create(&threads[t.id], NULL, query_handler, (void *) &t);
                 if (!rc)
                 {
                     printf("cant create thread !!! \n");
@@ -332,6 +332,7 @@ int main (int argc, char *argv[])
             }
         }
 
+        shmdt(&queries);
         exit(0);
     }
     else
