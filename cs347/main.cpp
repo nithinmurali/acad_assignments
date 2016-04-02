@@ -35,7 +35,8 @@ typedef struct buffer
     int top;
 
     buffer()
-    {
+    {   
+        printf("querry buffer: initalized \n");
         size = QNUM;
         top = 0;
     }
@@ -44,6 +45,7 @@ typedef struct buffer
     {
         if(top != size)
         {
+            printf("querry buffer: data pushed %s %ld \n",dat, pid );
             strcpy(dat, queries[top].data);
             queries[top].pid = pid;
             top++;
@@ -130,16 +132,19 @@ struct current_threads
         }
     }
 
-    int getid()
+    int getid(int &id)
     {
         for (int i = 0; i < tnum ; ++i)
         {
             if (active[i] == 0)
             {
                 active[i] = 1;
-                return i;
+                id = i;
+                return 0;
             }
         }
+        //thread pool filled
+        return -1;
     }
 
     void removeid(int id)
@@ -206,7 +211,7 @@ void query_maker()
         //generate query
         //generate_id(&id, 10);
         
-       //attemp data push or wait
+       //attemp data push
         int flag = 0;
         while(1)
         {
@@ -216,13 +221,19 @@ void query_maker()
             
             if (flag == 0)
             {
+                printf("query maker %d: data write sucessfull \n", getpid());                
                 //data write sucessfull
                 break;
             }
+            
+            printf("query maker %d: data write EROR \n", getpid());                
+            //wait until data is available            
             kill(parentpid, 30);
             raise(SIGSTOP); //SIGCONT
         }
 
+        printf("query maker %d : dummy enter\n", getpid());
+        
         //do dummy compute
         int result;
         for (int i = 0; i < 10000; ++i)
@@ -233,6 +244,7 @@ void query_maker()
             }
         }
         
+        printf("sleeping query maker(): process %d\n", getpid());
         sleep(100);
     }
 }
@@ -240,7 +252,7 @@ void query_maker()
 
 void sighandler(int signum, siginfo_t *info, void *ptr)
 {
-    printf("Main thread : Received signal %d\n", signum);
+    printf("Main thread %d : Received signal %d\n",getpid() , signum);
     printf("Main thread : Signal originates from process %lu\n",
         (unsigned long)info->si_pid);
     if (signum == 30)
@@ -274,17 +286,22 @@ int main (int argc, char *argv[])
     parentpid = getpid();
     int childpid[pnum];
 
+    printf(" parent: createing childs\n");
     //create query maker processes
     for (int i = 0; i < pnum; ++i)
     {
-        int cpid = fork();
-        childpid[i] = cpid;
+        if(getpid() == parentpid)
+        {
+            int cpid = fork();
+            childpid[i] = cpid;
+        }
     }
-
+    //printf("okey III\n");
     if(getpid() == parentpid)
     {
         //action for parent process
-        
+        printf("parent procees action initalized\n");
+
         //set the signal handler for pid queue
         //signal(SIGINT, sighandler);
         memset(&act, 0, sizeof(act));
@@ -302,32 +319,47 @@ int main (int argc, char *argv[])
             long spid;
             
             //fetch data
-            printf("fetching data from buffer \n");
+            printf("parent: fetching data from buffer \n");
             sem_wait(&query_buff_mutex);
             flag = queries->pop(data,&spid);
             sem_post(&query_buff_mutex);
             
             if(flag != 0)
             {
-                sleep(1);
+                printf("parent : buffer empty [%d]!! waiting \n",flag);
+                sleep(10);
                 continue;
             }
             else
             {
-                //generate threads
-                struct thread_data t;
-                strcpy(data, t.data);
-                pthread_mutex_lock (&threads_info_mutex);
-                t.id = threads_info.getid();
-                pthread_mutex_unlock (&threads_info_mutex);
-
-                int rc = pthread_create(&threads[t.id], NULL, query_handler, (void *) &t);
-                if (!rc)
+                while(1)
                 {
-                    printf("cant create thread !!! \n");
+                    //generate threads
+                    struct thread_data t;
+                    strcpy(data, t.data);
                     pthread_mutex_lock (&threads_info_mutex);
-                    threads_info.removeid(t.id);
+                    int trc = threads_info.getid(t.id);
                     pthread_mutex_unlock (&threads_info_mutex);
+
+                    if (trc == 0)
+                    {
+                        int rc = pthread_create(&threads[t.id], NULL, query_handler, (void *) &t);
+                        if (!rc)
+                        {
+                            printf("main Thread: cant create thread !!! \n");
+                            pthread_mutex_lock (&threads_info_mutex);
+                            threads_info.removeid(t.id);
+                            pthread_mutex_unlock (&threads_info_mutex);
+                        }
+                        break;
+                    }
+                    else
+                    {
+                        //no threads available
+                        printf("main Thread: Thread pool filled !!! sleeping\n");
+                        sleep(10);
+                        continue;
+                    }
                 }
             }
         }
