@@ -37,7 +37,7 @@ typedef struct buffer
 
     void init()
     {   
-        printf("querry buffer: initalized \n");
+        //printf("querry buffer: initalized \n");
         size = QNUM;
         top = 0;
     }
@@ -50,7 +50,7 @@ typedef struct buffer
             strcpy(queries[top].data, dat);
             queries[top].pid = pid;
             top++;
-            printf("querry buffer: data pushed %s %ld \n", queries[top-1].data, pid );
+            //printf("querry buffer: data pushed %s %ld \n", queries[top-1].data, pid );
             return 0;
         }
         else
@@ -64,7 +64,7 @@ typedef struct buffer
             strcpy( data, queries[top-1].data);
             *spid = queries[top-1].pid;
             top--;
-            printf("querry buffer: in data pop : %s, %ld \n", data, *spid );
+            //printf("querry buffer: in data pop : %s, %ld \n", data, *spid );
             return 0;
         }
         else
@@ -192,25 +192,30 @@ void *query_handler(void *t)
     my_data = (struct thread_data *) t;
     long my_id = (long)my_data->id;
    
+    //disable signal reception here
+    sigset_t set;
+    sigfillset(&set);
+    pthread_sigmask(SIG_SETMASK, &set, NULL);
+
     printf("Starting query handler(): thread %ld ; query %s\n", my_id, my_data->data);
 
     //do dummy compute
     int result;
-    for (int i = 0; i < 10000; ++i)
+    for (int i = 0; i < 1000; ++i)
     {
-        for (int j = 0; j < 1000; ++j)
+        for (int j = 0; j < 100; ++j)
         {
             result = i*j;
         }
     }
 
-    sleep_ms(100);
+    sleep_ms(10);
 
     //acknowledge that it has completed
     pthread_mutex_lock (&threads_info_mutex);
     threads_info.removeid(my_id);
     pthread_mutex_unlock (&threads_info_mutex);
-    
+    kill(getpid(),10);
     pthread_exit(NULL);
 }
 
@@ -242,17 +247,19 @@ void query_maker()
                 break;
             }
             
-            printf("    query maker %d: data write EROR !!!!!%d \n", getpid(),flag);                
+            printf("    query maker %d: buffer filled , suspending \n", getpid());                
             //wait until data is available            
             kill(parentpid, 30);
-            raise(SIGSTOP); //SIGCONT
+            //raise(20); //SIGCONT
+            kill(getpid(),SIGSTOP);
+            break;
         }
 
         //printf("query maker %d : dummy enter\n", getpid());
         
         //do dummy compute
         int result;
-        for (int i = 0; i < 10000; ++i)
+        for (int i = 0; i < 1000; ++i)
         {
             for (int j = 0; j < 1000; ++j)
             {
@@ -260,28 +267,33 @@ void query_maker()
             }
         }
         
-        printf("sleeping query maker(): process %d\n", getpid());
-        sleep_ms(100);
+        printf("    sleeping query maker(): process %d\n", getpid());
+        sleep_ms(10);
     }
 }
 
 
 void sighandler(int signum, siginfo_t *info, void *ptr)
 {
-    printf("Main thread %d : Received signal %d\n",getpid() , signum);
+    printf("Main thread : Received signal %d\n", signum);
     printf("Main thread : Signal originates from process %lu\n",
         (unsigned long)info->si_pid);
     if (signum == 30)
-    {
+    {   
+        printf("Main thread: append pid \n");
         //append process pid to wakr buffer
         pid_buff.push((long)info->si_pid);
     }
     else if(signum == 10)
     {
         //wake a  query maker process
+        printf("Main thread: wake maker \n");
         long spid;
-        pid_buff.pop(&spid);
-        kill(spid, SIGCONT);
+        int rc = pid_buff.pop(&spid);
+        if (rc == 0)
+        {
+            kill(spid, SIGCONT);
+        }
     }
 }
 
@@ -321,14 +333,15 @@ int main (int argc, char *argv[])
     if(getpid() == parentpid)
     {
         //action for parent process
-        printf("parent procees action initalized\n");
+        //printf("parent procees action initalized\n");
 
         //set the signal handler for pid queue
         //signal(SIGINT, sighandler);
         memset(&act, 0, sizeof(act));
         act.sa_sigaction = sighandler;
         act.sa_flags = SA_SIGINFO;
-        sigaction(SIGTERM, &act, NULL);
+        sigaction(30, &act, NULL);
+        sigaction(10, &act, NULL);
         
         //create threads
         pthread_t threads[tnum];
@@ -385,12 +398,13 @@ int main (int argc, char *argv[])
                     else
                     {
                         //no threads available
-                        printf("main Thread: Thread pool filled !!! sleeping\n");
+                        printf("parent : Thread pool filled !!! sleeping\n");
                         sleep_ms(10);
                         continue;
                     }
                 }
             }
+            sleep_ms(100);
         }
 
         shmdt(&queries);
