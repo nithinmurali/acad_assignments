@@ -14,9 +14,9 @@
 #include <time.h>   // for nanosleep
 #include <sys/time.h>
 
-#define QNUM 50
+#define QNUM 5
 #define pnum 5
-#define tnum 5
+#define tnum 2
 
 int parentpid = 0;
 sem_t query_buff_mutex;
@@ -214,9 +214,9 @@ void *query_handler(void *t)
 
     //do dummy compute
     int result;
-    for (int i = 0; i < 100000; ++i)
+    for (int i = 0; i < 1000; ++i)
     {
-        for (int j = 0; j < 1000; ++j)
+        for (int j = 0; j < 100; ++j)
         {
             result = i*j;
         }
@@ -269,7 +269,7 @@ void query_maker()
                 break;
             }
             
-            //printf("    query maker %d: buffer filled , suspending \n", getpid());                
+            printf("    query maker %d: buffer filled , suspending \n", getpid());                
             //wait until data is available            
             kill(parentpid, 30);
             //raise(20); //SIGCONT
@@ -423,14 +423,14 @@ int main (int argc, char *argv[])
                     else
                     {
                         //no threads available
-                        //printf("parent : Thread pool filled !!! sleeping\n");
+                        printf("parent : Thread pool filled !!! sleeping\n");
                         sleep_ms(10);
                         continue;
                     }
                 }
             }
 
-            sleep(10);
+            sleep_ms(10);
         }
 
         shmdt(&queries);
