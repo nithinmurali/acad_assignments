@@ -29,8 +29,8 @@ def rotate(l, x, d='f'):
         return False
 
 def encrypt(text, key):
-    blocklength = 10;
-    iv = "qwertyuiop"
+    blocklength = len(key);
+    iv = key
     cipher = ""
 
     numblocks = len(text)/blocklength;
@@ -79,7 +79,7 @@ def encrypt(text, key):
 
 
 def decrypt(cipher, key):
-    blocklength = 10;
+    blocklength = len(key);
     iv = "qwertyuiop"
     text =""
     numblocks = len(cipher)/blocklength;
@@ -148,9 +148,9 @@ if __name__ == '__main__':
             pass
     text = ntxt
 
-    cipher = encrypt(text,"wertyuopqi")
+    cipher = encrypt(text,"askdhfioejnf")
     open('./cipher', 'w').write(cipher)
-
+    #wertyuopqi,askdhfioejnf
     #decrypt(cipher,"wertyuopqi")
     
     #for plotting frequencies

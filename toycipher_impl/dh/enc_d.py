@@ -72,7 +72,7 @@ def plot_freq(text, n):
         c1 = Counter( [text[i:i+n] for i in range(0, len(text), n)] )
         text = text[1:]
         c2 = Counter( [text[i:i+n] for i in range(0, len(text), n)] )
-
+        tot = len(text)-1
         c1.update(c2)
     elif n==1:
         c1 = Counter(text)
@@ -81,7 +81,6 @@ def plot_freq(text, n):
         return
     #print c1
     print c1.most_common(10)
-    tot = len(c1)
     c1 = { key: value/float(tot) for key, value in c1.iteritems() }
     plt.bar(range(len(c1)), c1.values(), align='center')
     plt.xticks(range(len(c1)), c1.keys())
