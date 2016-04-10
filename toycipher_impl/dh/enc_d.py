@@ -40,7 +40,7 @@ def encrypt(text, key):
         for i in xrange(0,padlength):
             text += str('a')
         numblocks+=1
-    
+
     cis=[]
     #initial block
     k0=tonum(key)
@@ -90,12 +90,16 @@ def plot_freq(text, n):
 if __name__ == '__main__':
     filename = "./text"
     text = open(filename, 'r').read()
-    text=text.replace(".", "")
-    text=text.replace(",", "")
+    ntxt = ""
     text = ''.join(text.split())
-    cipher = encrypt(text,"wertyuopqi")
+    for x in text:
+        if str(x).isalpha():
+            ntxt += str(x)
+            pass
+    text = ntxt
+    #cipher = encrypt(text,"wertyuopqi")
     #open('./cipher', 'w').write(cipher)
 
     #for plotting frequencies
-    plot_freq(cipher,1)
-    plot_freq(cipher,2)
+    # plot_freq(cipher,1)
+    # plot_freq(cipher,2)

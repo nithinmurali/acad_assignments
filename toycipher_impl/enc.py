@@ -122,8 +122,8 @@ def plot_freq(text, n):
         c1 = Counter( [text[i:i+n] for i in range(0, len(text), n)] )
         text = text[1:]
         c2 = Counter( [text[i:i+n] for i in range(0, len(text), n)] )
-
         c1.update(c2)
+        tot = len(text)-1
     elif n==1:
         c1 = Counter(text)
         tot = len(text)
@@ -131,18 +131,23 @@ def plot_freq(text, n):
         return
     #print c1
     print c1.most_common(10)
-    tot = len(c1)
+    print "lenlen : ", tot
     c1 = { key: value/float(tot) for key, value in c1.iteritems() }
     plt.bar(range(len(c1)), c1.values(), align='center')
     plt.xticks(range(len(c1)), c1.keys())
     plt.show()
 
 if __name__ == '__main__':
-    filename = "./text"
+    filename = "./n2k"
     text = open(filename, 'r').read()
-    text=text.replace(".", "")
-    text=text.replace(",", "")
+    ntxt = ""
     text = ''.join(text.split())
+    for x in text:
+        if str(x).isalpha():
+            ntxt += str(x)
+            pass
+    text = ntxt
+
     cipher = encrypt(text,"wertyuopqi")
     open('./cipher', 'w').write(cipher)
 
