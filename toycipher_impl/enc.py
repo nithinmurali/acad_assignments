@@ -1,4 +1,7 @@
 #! bin/python
+
+# @author nithinmurali
+
 from collections import Counter
 import matplotlib.pyplot as plt
 
