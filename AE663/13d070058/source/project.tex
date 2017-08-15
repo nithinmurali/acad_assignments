@@ -1,0 +1,225 @@
+% Copyright 2004 by Till Tantau <tantau@users.sourceforge.net>.
+%
+% In principle, this file can be redistributed and/or modified under
+% the terms of the GNU Public License, version 2.
+%
+% However, this file is supposed to be a template to be modified
+% for your own needs. For this reason, if you use this file as a
+% template and not specifically distribute it as part of a another
+% package/program, I grant the extra permission to freely copy and
+% modify this file as you see fit and even to delete this copyright
+% notice. 
+\documentclass{beamer}
+\usepackage{listings}
+\usepackage{hyperref}
+\usepackage{minted}
+
+% There are many different themes available for Beamer. A comprehensive
+% list with examples is given here:
+% http://deic.uab.es/~iblanes/beamer_gallery/index_by_theme.html
+% You can uncomment the themes below if you would like to use a different
+% one:
+%\usetheme{AnnArbor}
+%\usetheme{Antibes}
+%\usetheme{Bergen}
+%\usetheme{Berkeley}
+%\usetheme{Berlin}
+%\usetheme{Boadilla}
+%\usetheme{boxes}
+%\usetheme{CambridgeUS}
+%\usetheme{Copenhagen}
+%\usetheme{Darmstadt}
+%\usetheme{default}
+%\usetheme{Frankfurt}
+%\usetheme{Goettingen}
+%\usetheme{Hannover}
+%\usetheme{Ilmenau}
+%\usetheme{JuanLesPins}
+%\usetheme{Luebeck}
+\usetheme{Madrid}
+%\usetheme{Malmoe}
+%\usetheme{Marburg}
+%\usetheme{Montpellier}
+%\usetheme{PaloAlto}
+%\usetheme{Pittsburgh}
+%\usetheme{Rochester}
+%\usetheme{Singapore}
+%\usetheme{Szeged}
+%\usetheme{Warsaw}
+
+\title{pygsheets}
+
+% A subtitle is optional and this may be deleted
+\subtitle{sdes Project 2}
+
+\author{Nithin M}
+
+
+% Let's get started
+\begin{document}
+
+\begin{frame}
+  \titlepage
+\end{frame}
+
+
+\begin{frame}{Outline}
+  \tableofcontents
+  % You might wish to add the option [pausesections]
+\end{frame}
+
+
+% Section and subsections will appear in the presentation overview
+% and table of contents.
+\section{Project Overview}
+
+\begin{frame}{Project Overview}
+  Google has rolled out its new version 4 of Google spreadsheet api, which adds a lot of new options. Even though Google has provided an python library for this api, it rather complicated and unintuitive. So pygsheets is meant to be a library which is rather easy to use and is intutive.
+\end{frame}
+
+\section{Features}
+
+\begin{frame}{Features}
+  \begin{itemize}
+  \item {
+     Simple to use
+  }
+  \item {
+    Open spreadsheets using title or key
+  }
+  \item {
+    Gives a spreadsheet like access, With intuitive modes like - spreadsheet, worksheet, cell
+  }
+  \item {
+    Doesn't need network connection for each request , work on a local copy and update once all the changes are done
+  }
+  \end{itemize}
+\end{frame}
+
+
+\begin{frame}{Example}
+    \inputminted{python}{eg.py}
+\end{frame}
+
+
+
+\section{Evaluation Criteria}
+
+\subsection{Proper use of git}
+\begin{frame}{Proper use of git}
+  \begin{itemize}
+      \item {The project uses git and is hosted in github.}
+      \item {Proper commit messages}
+      \item{using two branches -  master and staging}
+  \end{itemize}
+\end{frame}
+
+\subsection{Automated tests and coverage}
+\begin{frame}{Automated tests and coverage}
+  \begin{itemize}
+  
+  \item {There will two types of test suits}
+  \item {
+    A test suite that doesn't query the Google API (Mock test)
+    \begin{itemize}
+        \item{remarkedly speeds up}
+        \item{Avoids error-prone credential setup}
+        \item{Enables validation even if Internet access is unavailable.}
+    \end{itemize}
+  }
+  \item {
+    A test suite that queries the Google API.
+    \begin{itemize}
+        \item{Measures the production performance}
+        \item{Detects any changes in Google api}
+        \item{User will have to provide credentials to run this test/ or maybe provide a shared sheet credentials}
+    \end{itemize}
+  }
+  \end{itemize}
+\end{frame}
+
+
+\subsection{Automation}
+\begin{frame}{Automation}
+  \begin{itemize}
+  
+    \item {Makefile - TBD}
+    \item {setup.py - already developed}
+    \item {py.test/nose setup - TDB}
+    \item {travis - ci- TDB}
+    \item {pypi - TBD}
+  \end{itemize}
+\end{frame}
+
+
+\subsection{Documentation using sphinx }
+\begin{frame}{Documentation using sphinx }
+  \begin{itemize}
+  
+    \item {Not setup , but most of the code already documented inline in sphinx style}
+  \end{itemize}
+\end{frame}
+
+\subsection{Code cleanliness/approach/style  }
+\begin{frame}{Code cleanliness/approach/style  }
+  \begin{itemize}
+  
+    \item {The IDE i am using has inbuild PEP8 rules validation , so i am taking care of this as i am writing new code.}
+    \item{The library is divided in to client and models.}
+      \begin{itemize}
+        \item{The Models implement the spreadsheet entities -  spreadsheet which can have one or more worksheet which can have one or more cells.}
+        \item{The client handles all the backend communication with the server. The models will communicate with the client}
+      \end{itemize}
+
+    \item{Meaningful  custom exceptions}
+    
+  \end{itemize}
+\end{frame}
+
+\subsection{Content: Implementation of planned features.}
+\begin{frame}{Content: Implementation of planned features.}
+  \begin{itemize}
+    \item {Features yet to be Implemented}
+        \begin{itemize}
+            \item {Batch Operations}
+            \item {Improve cell manipulations}
+            \item {improve formatting options}
+            \item {add support for comments}
+            \item {Graph features - inserting graphs, etc}
+        \end{itemize}
+  \end{itemize}
+\end{frame}
+
+% All of the following is optional and typically not needed. 
+\appendix
+\section<presentation>*{\appendixname}
+\subsection<presentation>*{For Further Reading}
+
+\begin{frame}[allowframebreaks]
+  \frametitle<presentation>{Refrences}
+    
+  \begin{thebibliography}{10}
+    
+  \beamertemplatebookbibitems
+  % Start with overview books.
+
+  \bibitem{Google Spreadhseet API}
+     Pygsheets
+    \newblock {\em \url{https://github.com/nithinmurali/pygsheets}}.
+
+ 
+    
+  \beamertemplatearticlebibitems
+  % Followed by interesting articles. Keep the list short. 
+
+  \bibitem{pygsheets}
+     Spreadhseet API
+    \newblock {\em \url{https://developers.google.com/sheets/}}.
+    
+    
+  \end{thebibliography}
+\end{frame}
+
+\end{document}
+
+
