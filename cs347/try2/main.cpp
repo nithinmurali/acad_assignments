@@ -17,7 +17,7 @@
 #include <sstream>
 
 #define NUM_THREADS 5 
-#define MAX_SEATS 30
+#define MAX_SEATS 4
 #define NUM_FLIGHTS 10
 
 using namespace std;
@@ -85,6 +85,9 @@ pthread_mutex_t cout_mutex;
 pthread_mutex_t threads_info_mutex;
 pthread_cond_t thread_pool_cv;
 
+pthread_mutex_t worker_mutex[NUM_THREADS];
+pthread_cond_t worker_cv[NUM_THREADS];
+querry_flight querries[NUM_THREADS];
 
 void sleep_ms(int milliseconds) // cross-platform sleep function
 {
@@ -95,57 +98,73 @@ void sleep_ms(int milliseconds) // cross-platform sleep function
 }
 
 
-void *worker_thread(void *vquerry)
+void *worker_thread(void *threadid)
 {
+    long tid;
+    tid = (long)threadid;
     querry_flight *querry;
-    querry = (querry_flight *) vquerry;
-    string enum_names[3]={"status", "book", "cancel"};
-    string status;
+    querry = &querries[tid];
+    
+    // cout<<"worker thread : "<<tid<<" created"<<endl;
 
-    // cout<<"     enter : "<<querry->id<<endl;
+    while(true)
+    {
+        pthread_mutex_lock(&worker_mutex[tid]);
+        pthread_cond_wait(&worker_cv[tid], &worker_mutex[tid]);
+        pthread_mutex_unlock(&worker_mutex[tid]);                  
 
-    if(querry->operation == querry_flight_s::STATUS) {
-    
-        pthread_mutex_lock(&db_mutex);
-        if(flight_seats[querry->flight_id] < MAX_SEATS){
-            status = "available";
-        }else{
-            status = "not available";
+        pthread_mutex_lock(&cout_mutex);
+        // cout<<"     enter : "<<querries[tid].id<<" "<<tid<<endl;
+        pthread_mutex_unlock(&cout_mutex);
+        // querry = (querry_flight *) vquerry;
+        
+        string enum_names[3]={"status", "book", "cancel"};
+        string status;
+
+
+        if(querry->operation == querry_flight_s::STATUS) {
+        
+            pthread_mutex_lock(&db_mutex);
+            if(flight_seats[querry->flight_id] < MAX_SEATS){
+                status = "available";
+            }else{
+                status = "not available";
+            }
+            pthread_mutex_unlock(&db_mutex);
+        
+        } else if(querry->operation == querry_flight_s::BOOK) {
+        
+            pthread_mutex_lock(&db_mutex);
+            if(flight_seats[querry->flight_id] < MAX_SEATS){
+                flight_seats[querry->flight_id]++;
+                status = "seats " + std::to_string(flight_seats[querry->flight_id]);
+            }else{
+                status = "flight full";
+            }
+            pthread_mutex_unlock(&db_mutex);
+        
+        } else if(querry->operation == querry_flight_s::CANCEL) {
+        
+            pthread_mutex_lock(&db_mutex);
+            if(flight_seats[querry->flight_id] > 0){
+                flight_seats[querry->flight_id]--;
+                status = "seats "+ std::to_string(flight_seats[querry->flight_id]);
+            }else{
+                status = "flight empty";
+            }
+            pthread_mutex_unlock(&db_mutex);        
         }
-        pthread_mutex_unlock(&db_mutex);
-    
-    } else if(querry->operation == querry_flight_s::BOOK) {
-    
-        pthread_mutex_lock(&db_mutex);
-        if(flight_seats[querry->flight_id] < MAX_SEATS){
-            flight_seats[querry->flight_id]++;
-            status = "seats " + std::to_string(flight_seats[querry->flight_id]);
-        }else{
-            status = "flight full";
-        }
-        pthread_mutex_unlock(&db_mutex);
-    
-    } else if(querry->operation == querry_flight_s::CANCEL) {
-    
-        pthread_mutex_lock(&db_mutex);
-        if(flight_seats[querry->flight_id] > 0){
-            flight_seats[querry->flight_id]--;
-            status = "seats "+ std::to_string(flight_seats[querry->flight_id]);
-        }else{
-            status = "flight empty";
-        }
-        pthread_mutex_unlock(&db_mutex);        
+        // sleep_ms(10);
+        pthread_mutex_lock(&cout_mutex);
+        cout<<"worker thread: "<< querry->handling_thread<<" operation: ("<<querry->id<<", "<<querry->flight_id<<", "<<enum_names[querry->operation]<<") result: "<<status<<endl;
+        pthread_mutex_unlock(&cout_mutex);
+
+        pthread_mutex_lock(&threads_info_mutex);
+        threads_info.removeid(querry->handling_thread);
+        pthread_cond_signal(&thread_pool_cv);
+        pthread_mutex_unlock(&threads_info_mutex);
     }
-    // sleep_ms(10);
-    pthread_mutex_lock(&cout_mutex);
-    cout<<"worker thread: "<< querry->handling_thread<<" operation: ("<<querry->id<<", "<<querry->flight_id<<", "<<enum_names[querry->operation]<<") result: "<<status<<endl;
-    pthread_mutex_unlock(&cout_mutex);
-
-    pthread_mutex_lock(&threads_info_mutex);
-    threads_info.removeid(querry->handling_thread);
-    pthread_cond_signal(&thread_pool_cv);
-    pthread_mutex_unlock(&threads_info_mutex);
-    delete querry;
+    // delete querry;
     pthread_exit(NULL);
 }
 
@@ -157,10 +176,27 @@ int main(int argc, char *argv[])
 	ifstream trans_file ("transactions");
 	if (trans_file.is_open())
 	{
+
+        for(int t=0; t<NUM_THREADS; t++){
+            long tid=t;
+            int rc = pthread_create(&threads[tid], NULL, worker_thread, (void *)tid);
+            if (rc != 0)
+            {
+                printf("main Thread: cant create thread !!! \n");
+                sleep_ms(10);
+                continue;
+            }else
+            {
+                pthread_mutex_lock(&cout_mutex);
+                printf("main Thread: created thread %d !!! \n", t);
+                pthread_mutex_unlock(&cout_mutex);
+            }
+        }
+
 		while ( getline (trans_file, line) )
 		{
             // cout<<"     "<<line<<endl;
-
+            // sleep_ms(10);
     		if(line == "END"){
     			cout<<"All queries have been processed"<<endl;
                 break;
@@ -191,27 +227,22 @@ int main(int argc, char *argv[])
                 if(trc == 0){
                     //thread availabe
                     
-                    querry_flight* querry = new querry_flight();
-                    querry->operation = (querry_flight_s::operations)op;
-                    querry->flight_id = flight_id;
-                    querry->handling_thread = tid;
-                    querry->id = qid;
+                    // querry_flight* querry = new querry_flight();
+                    querries[tid].operation = (querry_flight_s::operations)op;
+                    querries[tid].flight_id = flight_id;
+                    querries[tid].handling_thread = tid;
+                    querries[tid].id = qid;
 
-                    int rc = pthread_create(&threads[tid], NULL, worker_thread, (void *)querry);
-                    if (rc != 0)
-                    {
-                        printf("main Thread: cant create thread !!! \n");
-                        threads_info.removeid(tid);
-                        sleep_ms(10);
-                        continue;
-                    }
-                    else
-                    {
-                        pthread_mutex_lock(&cout_mutex);
-                        printf("main Thread: worker %d assigned to querry %d \n", querry->handling_thread, querry->id);
-                        pthread_mutex_unlock(&cout_mutex);
-                        break;
-                    }
+                    // querry[tid] = *querry;
+
+                    pthread_mutex_lock(&worker_mutex[tid]);
+                    pthread_cond_signal(&worker_cv[tid]);
+                    pthread_mutex_unlock(&worker_mutex[tid]);
+
+                    pthread_mutex_lock(&cout_mutex);
+                    printf("main Thread: worker %d assigned to querry %d \n", tid, querries[tid].id);
+                    pthread_mutex_unlock(&cout_mutex);
+                    break;
                 }else{
                     //no threads available
                     pthread_mutex_lock(&cout_mutex);

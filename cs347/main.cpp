@@ -319,7 +319,7 @@ void sighandler(int signum, siginfo_t *info, void *ptr)
     }
 }
 
-    
+
 int main (int argc, char *argv[])
 {
 

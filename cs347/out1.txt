@@ -1,0 +1,994 @@
+Processing of Query : QoMNUckLhy is completed at 3 by 0 
+Processing of Query : QoMNUckLhy is completed at 3 by 1 
+Processing of Query : tCmvXUDI8B is completed at 13 by 2 
+Processing of Query : tCmvXUDI8B is completed at 14 by 3 
+Processing of Query : QoMNUckLhy is completed at 25 by 4 
+Processing of Query : 1f8N9o86Zd is completed at 104 by 0 
+Processing of Query : vQBiDwuYiL is completed at 104 by 1 
+Processing of Query : 1f8N9o86Zd is completed at 114 by 2 
+Processing of Query : tCmvXUDI8B is completed at 125 by 3 
+Processing of Query : 1f8N9o86Zd is completed at 135 by 4 
+Processing of Query : vQBiDwuYiL is completed at 204 by 0 
+Processing of Query : wLoThlOU4W is completed at 204 by 1 
+Processing of Query : tCmvXUDI8B is completed at 214 by 2 
+Processing of Query : wLoThlOU4W is completed at 226 by 3 
+Processing of Query : w2rVVIhJDl is completed at 236 by 4 
+Processing of Query : eYTQgxnLvF is completed at 305 by 1 
+Processing of Query : GarSPkeTlG is completed at 305 by 0 
+Processing of Query : eYTQgxnLvF is completed at 315 by 2 
+Processing of Query : tdWV9SDqCh is completed at 326 by 3 
+Processing of Query : XAERrVoOGU is completed at 336 by 4 
+Processing of Query : tdWV9SDqCh is completed at 405 by 1 
+Processing of Query : 67uLZVGnKm is completed at 406 by 0 
+Processing of Query : GarSPkeTlG is completed at 415 by 2 
+Processing of Query : 67uLZVGnKm is completed at 427 by 3 
+Processing of Query : DL58w44csO is completed at 437 by 4 
+Processing of Query : zK39ZcT7Z3 is completed at 506 by 1 
+Processing of Query : 4W3waeNJEX is completed at 506 by 0 
+Processing of Query : 4W3waeNJEX is completed at 515 by 2 
+Processing of Query : myzsG6wKiZ is completed at 527 by 3 
+Processing of Query : R40VAbaoUO is completed at 537 by 4 
+Processing of Query : myzsG6wKiZ is completed at 606 by 1 
+Processing of Query : YKUYFuaPT4 is completed at 607 by 0 
+Processing of Query : zK39ZcT7Z3 is completed at 616 by 2 
+Processing of Query : YKUYFuaPT4 is completed at 628 by 3 
+Processing of Query : WrkQq0lBPe is completed at 637 by 4 
+Processing of Query : FttiIbC2pH is completed at 707 by 1 
+Processing of Query : dEvYhxI7tA is completed at 707 by 0 
+Processing of Query : dEvYhxI7tA is completed at 716 by 2 
+Processing of Query : VGEfx5gSG5 is completed at 728 by 3 
+Processing of Query : FDlbBCJkJc is completed at 738 by 4 
+Processing of Query : VGEfx5gSG5 is completed at 807 by 1 
+Processing of Query : Z0PkbrXULH is completed at 809 by 0 
+Processing of Query : FttiIbC2pH is completed at 817 by 2 
+Processing of Query : Z0PkbrXULH is completed at 829 by 3 
+Processing of Query : sQuibGJ8Bu is completed at 838 by 4 
+Processing of Query : PIbdu78mkV is completed at 908 by 1 
+Processing of Query : iUUSuzagRu is completed at 912 by 0 
+Processing of Query : iUUSuzagRu is completed at 917 by 2 
+Processing of Query : 946Emhk5qV is completed at 929 by 3 
+Processing of Query : UCPOukoEBg is completed at 939 by 4 
+Processing of Query : 946Emhk5qV is completed at 1008 by 1 
+Processing of Query : yqPofkJDZk is completed at 1013 by 0 
+Processing of Query : PIbdu78mkV is completed at 1018 by 2 
+Processing of Query : yqPofkJDZk is completed at 1030 by 3 
+Processing of Query : iEO833sMGr is completed at 1039 by 4 
+Processing of Query : 7AzwAmiTta is completed at 1108 by 1 
+Processing of Query : 3rZHdtR56n is completed at 1113 by 0 
+Processing of Query : 3rZHdtR56n is completed at 1118 by 2 
+Processing of Query : tdPimSlOE2 is completed at 1130 by 3 
+Processing of Query : BwCAeP46Va is completed at 1142 by 4 
+Processing of Query : tdPimSlOE2 is completed at 1209 by 1 
+Processing of Query : MIcojqenx9 is completed at 1214 by 0 
+Processing of Query : 7AzwAmiTta is completed at 1218 by 2 
+Processing of Query : MIcojqenx9 is completed at 1230 by 3 
+Processing of Query : womING923G is completed at 1242 by 4 
+Processing of Query : bCHz00igER is completed at 1309 by 1 
+Processing of Query : GOHjE0xQCD is completed at 1314 by 0 
+Processing of Query : GOHjE0xQCD is completed at 1319 by 2 
+Processing of Query : PFUboHRxJV is completed at 1331 by 3 
+Processing ofquery maker 9095: generateing query : QoMNUckLhy 
+query maker 9095: generateing query : tCmvXUDI8B 
+data entred tCmvXUDI8B by 9095 : 117 
+query maker 9095: generateing query : 1f8N9o86Zd 
+data entred 1f8N9o86Zd by 9095 : 131 
+query maker 9095: generateing query : vQBiDwuYiL 
+data entred vQBiDwuYiL by 9095 : 144 
+query maker 9095: generateing query : wLoThlOU4W 
+data entred wLoThlOU4W by 9095 : 157 
+query maker 9095: generateing query : w5bFTl31s3 
+query maker 9095: generateing query : eYTQgxnLvF 
+data entred eYTQgxnLvF by 9095 : 217 
+query maker 9095: generateing query : w2rVVIhJDl 
+data entred w2rVVIhJDl by 9095 : 231 
+query maker 9095: generateing query : GarSPkeTlG 
+data entred GarSPkeTlG by 9095 : 243 
+query maker 9095: generateing query : XAERrVoOGU 
+query maker 9095: generateing query : tdWV9SDqCh 
+data entred tdWV9SDqCh by 9095 : 318 
+query maker 9095: generateing query : MjrebhypaU 
+query maker 9095: generateing query : 67uLZVGnKm 
+data entred 67uLZVGnKm by 9095 : 348 
+query maker 9095: generateing query : ieAf9J7NaK 
+query maker 9095: generateing query : 4W3waeNJEX 
+data entred 4W3waeNJEX by 9095 : 418 
+query maker 9095: generateing query : DL58w44csO 
+data entred DL58w44csO by 9095 : 432 
+query maker 9095: generateing query : zK39ZcT7Z3 
+data entred zK39ZcT7Z3 by 9095 : 444 
+query maker 9095: generateing query : R40VAbaoUO 
+query maker 9095: generateing query : myzsG6wKiZ 
+data entred myzsG6wKiZ by 9095 : 518 
+query maker 9095: generateing query : zSKC2KPVSP 
+query maker 9095: generateing query : YKUYFuaPT4 
+data entred YKUYFuaPT4 by 9095 : 549 
+query maker 9095: generateing query : EfDeHjke4D 
+query maker 9095: generateing query : dEvYhxI7tA 
+data entred dEvYhxI7tA by 9095 : 619 
+query maker 9095: generateing query : WrkQq0lBPe 
+data entred WrkQq0lBPe by 9095 : 633 
+query maker 9095: generateing query : FttiIbC2pH 
+data entred FttiIbC2pH by 9095 : 645 
+query maker 9095: generateing query : FDlbBCJkJc 
+query maker 9095: generateing query : VGEfx5gSG5 
+data entred VGEfx5gSG5 by 9095 : 719 
+query maker 9095: generateing query : 6mzAFhMhkb 
+query maker 9095: generateing query : Z0PkbrXULH 
+data entred Z0PkbrXULH by 9095 : 750 
+query maker 9095: generateing query : 7GnMWURcNx 
+query maker 9095: generateing query : iUUSuzagRu 
+data entred iUUSuzagRu by 9095 : 819 
+query maker 9095: generateing query : sQuibGJ8Bu 
+data entred sQuibGJ8Bu by 9095 : 832 
+query maker 9095: generateing query : PIbdu78mkV 
+data entred PIbdu78mkV by 9095 : 844 
+query maker 9095: generateing query : UCPOukoEBg 
+query maker 9095: generateing query : 946Emhk5qV 
+data entred 946Emhk5qV by 9095 : 922 
+query maker 9095: generateing query : AgELu9SCwc 
+query maker 9095: generateing query : yqPofkJDZk 
+data entred yqPofkJDZk by 9095 : 951 
+query maker 9095: generateing query : T8p0MMi7RI 
+query maker 9095: generateing query : 3rZHdtR56n 
+data entred 3rZHdtR56n by 9095 : 1020 
+query maker 9095: generateing query : iEO833sMGr 
+data entred iEO833sMGr by 9095 : 1033 
+query maker 9095: generateing query : 7AzwAmiTta 
+data entred 7AzwAmiTta by 9095 : 1045 
+query maker 9095: generateing query : BwCAeP46Va 
+query maker 9095: generateing query : tdPimSlOE2 
+data entred tdPimSlOE2 by 9095 : 1126 
+query maker 9095: generateing query : fMCPjdcB6F 
+query maker 9095: generateing query : MIcojqenx9 
+data entred MIcojqenx9 by 9095 : 1152 
+query maker 9095: generateing query : y0nniJgEyV 
+query maker 9095: generateing query : GOHjE0xQCD 
+data entred GOHjE0xQCD by 9095 : 1221 
+query maker 9095: generateing query : womING923G 
+data entred womING923G by 9095 : 1234 
+query maker 9095: generateing query : bCHz00igER 
+data entred bCHz00igER by 9095 : 1246 
+query maker 9095: generateing query : blFSEjSb9v 
+query maker 9095: generateing query : PFUboHRxJV 
+data entred PFUboHRxJV by 9095 : 1326 
+query maker 9095: generateing query : eVyVuyWNOA 
+query maker 9095: generateing query : EZWkSADLMN 
+data entred EZWkSADLMN by 9095 : 1355 
+query maker 9095: generateing query : gBtaNRSFpB 
+query maker 9095: generateing query : BEx9z2HwPv 
+data entred BEx9z2HwPv by 9095 : 1422 
+queryquery maker 9093: generateing query : QoMNUckLhy 
+query maker 9093: generateing query : tCmvXUDI8B 
+data entred tCmvXUDI8B by 9093 : 117 
+query maker 9093: generateing query : 1f8N9o86Zd 
+data entred 1f8N9o86Zd by 9093 : 131 
+query maker 9093: generateing query : vQBiDwuYiL 
+query maker 9093: generateing query : wLoThlOU4W 
+data entred wLoThlOU4W by 9093 : 218 
+query maker 9093: generateing query : w5bFTl31s3 
+query maker 9093: generateing query : eYTQgxnLvF 
+data entred eYTQgxnLvF by 9093 : 248 
+query maker 9093: generateing query : w2rVVIhJDl 
+query maker 9093: generateing query : GarSPkeTlG 
+data entred GarSPkeTlG by 9093 : 318 
+query maker 9093: generateing query : XAERrVoOGU 
+data entred XAERrVoOGU by 9093 : 332 
+query maker 9093: generateing query : tdWV9SDqCh 
+data entred tdWV9SDqCh by 9093 : 344 
+query maker 9093: generateing query : MjrebhypaU 
+query maker 9093: generateing query : 67uLZVGnKm 
+data entred 67uLZVGnKm by 9093 : 419 
+query maker 9093: generateing query : ieAf9J7NaK 
+query maker 9093: generateing query : 4W3waeNJEX 
+data entred 4W3waeNJEX by 9093 : 449 
+query maker 9093: generateing query : DL58w44csO 
+query maker 9093: generateing query : zK39ZcT7Z3 
+data entred zK39ZcT7Z3 by 9093 : 518 
+query maker 9093: generateing query : R40VAbaoUO 
+data entred R40VAbaoUO by 9093 : 531 
+query maker 9093: generateing query : myzsG6wKiZ 
+data entred myzsG6wKiZ by 9093 : 543 
+query maker 9093: generateing query : zSKC2KPVSP 
+query maker 9093: generateing query : YKUYFuaPT4 
+data entred YKUYFuaPT4 by 9093 : 620 
+query maker 9093: generateing query : EfDeHjke4D 
+query maker 9093: generateing query : dEvYhxI7tA 
+data entred dEvYhxI7tA by 9093 : 650 
+query maker 9093: generateing query : WrkQq0lBPe 
+query maker 9093: generateing query : FttiIbC2pH 
+data entred FttiIbC2pH by 9093 : 719 
+query maker 9093: generateing query : FDlbBCJkJc 
+data entred FDlbBCJkJc by 9093 : 731 
+query maker 9093: generateing query : VGEfx5gSG5 
+data entred VGEfx5gSG5 by 9093 : 744 
+query maker 9093: generateing query : 6mzAFhMhkb 
+query maker 9093: generateing query : Z0PkbrXULH 
+data entred Z0PkbrXULH by 9093 : 820 
+query maker 9093: generateing query : 7GnMWURcNx 
+query maker 9093: generateing query : iUUSuzagRu 
+data entred iUUSuzagRu by 9093 : 851 
+query maker 9093: generateing query : sQuibGJ8Bu 
+query maker 9093: generateing query : PIbdu78mkV 
+data entred PIbdu78mkV by 9093 : 920 
+query maker 9093: generateing query : UCPOukoEBg 
+data entred UCPOukoEBg by 9093 : 932 
+query maker 9093: generateing query : 946Emhk5qV 
+data entred 946Emhk5qV by 9093 : 945 
+query maker 9093: generateing query : AgELu9SCwc 
+query maker 9093: generateing query : yqPofkJDZk 
+data entred yqPofkJDZk by 9093 : 1025 
+query maker 9093: generateing query : T8p0MMi7RI 
+query maker 9093: generateing query : 3rZHdtR56n 
+data entred 3rZHdtR56n by 9093 : 1052 
+query maker 9093: generateing query : iEO833sMGr 
+query maker 9093: generateing query : 7AzwAmiTta 
+data entred 7AzwAmiTta by 9093 : 1121 
+query maker 9093: generateing query : BwCAeP46Va 
+data entred BwCAeP46Va by 9093 : 1133 
+query maker 9093: generateing query : tdPimSlOE2 
+data entred tdPimSlOE2 by 9093 : 1146 
+query maker 9093: generateing query : fMCPjdcB6F 
+query maker 9093: generateing query : MIcojqenx9 
+data entred MIcojqenx9 by 9093 : 1226 
+query maker 9093: generateing query : y0nniJgEyV 
+query maker 9093: generateing query : GOHjE0xQCD 
+data entred GOHjE0xQCD by 9093 : 1254 
+query maker 9093: generateing query : womING923G 
+query maker 9093: generateing query : bCHz00igER 
+data entred bCHz00igER by 9093 : 1321 
+query maker 9093: generateing query : blFSEjSb9v 
+data entred blFSEjSb9v by 9093 : 1334 
+query maker 9093: generateing query : PFUboHRxJV 
+data entred PFUboHRxJV by 9093 : 1346 
+query maker 9093: generateing query : eVyVuyWNOA 
+query maker 9093: generateing query : EZWkSADLMN 
+data entred EZWkSADLMN by 9093 : 1427 
+query maker 9093: generateing query : gBtaNRSFpB 
+query maker 9093: generateing query : BEx9z2HwPv 
+data entred BEx9z2HwPv by 9093 : 1455 
+query maker 9093: generateing query : 6uv3 Query : blFSEjSb9v is completed at 1343 by 4 
+Processing of Query : PFUboHRxJV is completed at 1410 by 1 
+Processing of Query : EZWkSADLMN is completed at 1415 by 0 
+Processing of Query : bCHz00igER is completed at 1419 by 2 
+Processing of Query : EZWkSADLMN is completed at 1431 by 3 
+Processing of Query : 6uv3OnDs8p is completed at 1443 by 4 
+Processing of Query : fp1IzOArtZ is completed at 1510 by 1 
+Processing of Query : BEx9z2HwPv is completed at 1515 by 0 
+Processing of Query : BEx9z2HwPv is completed at 1520 by 2 
+Processing of Query : rQXWTLkxdt is completed at 1532 by 3 
+Processing of Query : 34DBddDVJs is completed at 1544 by 4 
+Processing of Query : rQXWTLkxdt is completed at 1611 by 1 
+Processing of Query : LXkoyyCbtm is completed at 1616 by 0 
+Processing of Query : fp1IzOArtZ is completed at 1620 by 2 
+Processing of Query : LXkoyyCbtm is completed at 1632 by 3 
+Processing of Query : BLTVaruNDX is completed at 1644 by 4 
+Processing of Query : 9iSmTKtgW7 is completed at 1711 by 1 
+Processing of Query : FA3yyf1l0V is completed at 1716 by 0 
+Processing of Query : FA3yyf1l0V is completed at 1721 by 2 
+Processing of Query : 7eW097sEU6 is completed at 1733 by 3 
+Processing of Query : RCIVbhacCa is completed at 1744 by 4 
+Processing of Query : 7eW097sEU6 is completed at 1812 by 1 
+Processing of Query : 2qOKmZ2wcF is completed at 1817 by 0 
+Processing of Query : 9iSmTKtgW7 is completed at 1821 by 2 
+Processing of Query : 2qOKmZ2wcF is completed at 1833 by 3 
+Processing of Query : f8A3TW3Vtf is completed at 1845 by 4 
+Processing of Query : AaAtOVwAJd is completed at 1912 by 1 
+Processing of Query : UjKiObA369 is completed at 1917 by 0 
+Processing of Query : UjKiObA369 is completed at 1922 by 2 
+Processing of Query : GDrgHkdLgG is completed at 1933 by 3 
+Processing of Query : gDx1Vlcwoj is completed at 1945 by 4 
+Processing of Query : 1QQBjFwQff is completed at 2013 by 1 
+Processing of Query : 4vTBwOXJlm is completed at 2018 by 0 
+Processing of Query : AaAtOVwAJd is completed at 2022 by 2 
+Processing of Query : 1QQBjFwQff is completed at 2034 by 3 
+Processing of Query : RatKM0zJKV is completed at 2046 by 4 
+Processing of Query : 5MW6heO5Kh is completed at 2113 by 1 
+Processing of Query : 210uiHOvs4 is completed at 2119 by 0 
+Processing of Query : btV25fIB5X is completed at 2123 by 2 
+Processing of Query : RatKM0zJKV is completed at 2135 by 3 
+Processing of Query : 5MW6heO5Kh is completed at 2146 by 4 
+Processing of Query : AdFwjWL72v is completed at 2214 by 1 
+Processing of Query : ods9jq0E7s is completed at 2219 by 0 
+Processing of Query : EkB85n8E7S is completed at 2224 by 2 
+Processing of Query : EkB85n8E7S is completed at 2235 by 3 
+Processing of Query : VdMnn6OoKV is completed at 2247 by 4 
+Processing of Query : QPIDwCvzF1 is completed at 2314 by 1 
+Processing of Query : ods9jq0E7s is completed at 2320 by 0 
+Processing of Query : V6oADHxpOz is completed at 2324 by 2 
+Processing of Query : j6T6tgchEW is completed at 2336 by 3 
+Processing of Query : VdMnn6OoKV is completed at 2347 by 4 
+Processing of Query : QPIDwCvzF1 is completed at 2415 by 1 
+Processing of Query : FDPOL1ACLM is completed at 2420 by 0 
+Processing of Query : V6oADHxpOz is completed at 2425 by 2 
+Processing of Query : j6T6tgchEW is completed at 2436 by 3 
+Processing of Query : B4TqSFstid is completed at 2448 by 4 
+Processing of Query : fzi7KtubR8 is completed at 2515 by 1 
+Processing of Query : FDPOL1ACLM is completed at 2521 by 0 
+Processing of Query : kRB6NKomog is completed at 2525 by 2 
+Processing of Query : XM7RcZxFsP is completed at 2536 by 3 
+Processing of Query : B4TqSFstid is completed at 2548 by 4 
+Processing of Query : fzi7KtubR8 is completed at 2616 by 1 
+Processing of Query : sDIsx0gbGr is completed at 2621 by 0 
+Processing of Query : kRB6NKomog is completed at 2626 by 2 
+Processing of Query : XM7RcZxFsP is completed at 2637 by 3 
+Processing of Query : n8q6BX6R9N is completed at 2649 by 4 
+Processing of Query : josxKYX513 is completed at 2716 by 1 
+Processing of Query : sDIsx0gbGr is completed at 2722 by 0 
+Processing of Query : SZwhbmr maker 9095: generateing query : 6uv3OnDs8p 
+data entred 6uv3OnDs8p by 9095 : 1434 
+query maker 9095: generateing query : fp1IzOArtZ 
+data entred fp1IzOArtZ by 9095 : 1447 
+query maker 9095: generateing query : 34DBddDVJs 
+query maker 9095: generateing query : rQXWTLkxdt 
+data entred rQXWTLkxdt by 9095 : 1527 
+query maker 9095: generateing query : WsSXbsMLUf 
+query maker 9095: generateing query : LXkoyyCbtm 
+data entred LXkoyyCbtm by 9095 : 1556 
+query maker 9095: generateing query : EUdBR6ncEA 
+query maker 9095: generateing query : FA3yyf1l0V 
+data entred FA3yyf1l0V by 9095 : 1623 
+query maker 9095: generateing query : BLTVaruNDX 
+data entred BLTVaruNDX by 9095 : 1635 
+query maker 9095: generateing query : 9iSmTKtgW7 
+data entred 9iSmTKtgW7 by 9095 : 1648 
+query maker 9095: generateing query : RCIVbhacCa 
+query maker 9095: generateing query : 7eW097sEU6 
+data entred 7eW097sEU6 by 9095 : 1728 
+query maker 9095: generateing query : C4ourifUzb 
+query maker 9095: generateing query : 2qOKmZ2wcF 
+data entred 2qOKmZ2wcF by 9095 : 1757 
+query maker 9095: generateing query : HkTEl3LNHG 
+query maker 9095: generateing query : UjKiObA369 
+data entred UjKiObA369 by 9095 : 1824 
+query maker 9095: generateing query : f8A3TW3Vtf 
+data entred f8A3TW3Vtf by 9095 : 1836 
+query maker 9095: generateing query : AaAtOVwAJd 
+data entred AaAtOVwAJd by 9095 : 1849 
+query maker 9095: generateing query : gDx1Vlcwoj 
+query maker 9095: generateing query : GDrgHkdLgG 
+data entred GDrgHkdLgG by 9095 : 1931 
+query maker 9095: generateing query : 1QQBjFwQff 
+data entred 1QQBjFwQff by 9095 : 1944 
+query maker 9095: generateing query : 4vTBwOXJlm 
+data entred 4vTBwOXJlm by 9095 : 1956 
+query maker 9095: generateing query : 210uiHOvs4 
+query maker 9095: generateing query : btV25fIB5X 
+data entred btV25fIB5X by 9095 : 2025 
+query maker 9095: generateing query : RatKM0zJKV 
+data entred RatKM0zJKV by 9095 : 2037 
+query maker 9095: generateing query : 5MW6heO5Kh 
+data entred 5MW6heO5Kh by 9095 : 2049 
+query maker 9095: generateing query : aWL5YQlGsq 
+query maker 9095: generateing query : EkB85n8E7S 
+data entred EkB85n8E7S by 9095 : 2133 
+query maker 9095: generateing query : AdFwjWL72v 
+data entred AdFwjWL72v by 9095 : 2147 
+query maker 9095: generateing query : ods9jq0E7s 
+data entred ods9jq0E7s by 9095 : 2160 
+query maker 9095: generateing query : 5MMGUR32wa 
+query maker 9095: generateing query : V6oADHxpOz 
+data entred V6oADHxpOz by 9095 : 2226 
+query maker 9095: generateing query : VdMnn6OoKV 
+data entred VdMnn6OoKV by 9095 : 2238 
+query maker 9095: generateing query : QPIDwCvzF1 
+data entred QPIDwCvzF1 by 9095 : 2250 
+query maker 9095: generateing query : KB88cMQJbF 
+query maker 9095: generateing query : j6T6tgchEW 
+data entred j6T6tgchEW by 9095 : 2332 
+query maker 9095: generateing query : dvMW8iyDSe 
+query maker 9095: generateing query : FDPOL1ACLM 
+data entred FDPOL1ACLM by 9095 : 2359 
+query maker 9095: generateing query : h4SabmrnE6 
+query maker 9095: generateing query : kRB6NKomog 
+data entred kRB6NKomog by 9095 : 2427 
+query maker 9095: generateing query : B4TqSFstid 
+data entred B4TqSFstid by 9095 : 2439 
+query maker 9095: generateing query : fzi7KtubR8 
+data entred fzi7KtubR8 by 9095 : 2452 
+query maker 9095: generateing query : ib0ThOEGa2 
+query maker 9095: generateing query : XM7RcZxFsP 
+data entred XM7RcZxFsP by 9095 : 2533 
+query maker 9095: generateing query : TIpbP9Fklx 
+query maker 9095: generateing query : sDIsx0gbGr 
+data entred sDIsx0gbGr by 9095 : 2560 
+query maker 9095: generateing query : eEdlvql35O 
+query maker 9095: generateing query : SZwhbmrQGM 
+data entred SZwhbmrQGM by 9095 : 2628 
+query maker 9095: generateing query : n8q6BX6R9N 
+data entred n8q6BX6R9N by 9095 : 2640 
+query maker 9095: generateing query : josxKYX513 
+data entred josxKYX513 by 9095 : 2652 
+query maker 9095: generateing query : TT2pbdMC4s 
+query maker 9095: generateing query : psBPycNF4X 
+data entred psBPycNF4X by 9095 : 2736 
+query maker 9095: generateing query : tnmVU6TSbV 
+data entred tnmVU6TSbV by 9095 : 2751 
+query maker 9095: generateing query : V5OYv0bhCOnDs8p 
+query maker 9093: generateing query : fp1IzOArtZ 
+data entred fp1IzOArtZ by 9093 : 1522 
+query maker 9093: generateing query : 34DBddDVJs 
+data entred 34DBddDVJs by 9093 : 1535 
+query maker 9093: generateing query : rQXWTLkxdt 
+data entred rQXWTLkxdt by 9093 : 1547 
+query maker 9093: generateing query : WsSXbsMLUf 
+query maker 9093: generateing query : LXkoyyCbtm 
+data entred LXkoyyCbtm by 9093 : 1628 
+query maker 9093: generateing query : EUdBR6ncEA 
+query maker 9093: generateing query : FA3yyf1l0V 
+data entred FA3yyf1l0V by 9093 : 1656 
+query maker 9093: generateing query : BLTVaruNDX 
+query maker 9093: generateing query : 9iSmTKtgW7 
+data entred 9iSmTKtgW7 by 9093 : 1723 
+query maker 9093: generateing query : RCIVbhacCa 
+data entred RCIVbhacCa by 9093 : 1736 
+query maker 9093: generateing query : 7eW097sEU6 
+data entred 7eW097sEU6 by 9093 : 1748 
+query maker 9093: generateing query : C4ourifUzb 
+query maker 9093: generateing query : 2qOKmZ2wcF 
+data entred 2qOKmZ2wcF by 9093 : 1830 
+query maker 9093: generateing query : HkTEl3LNHG 
+query maker 9093: generateing query : UjKiObA369 
+data entred UjKiObA369 by 9093 : 1857 
+query maker 9093: generateing query : f8A3TW3Vtf 
+query maker 9093: generateing query : AaAtOVwAJd 
+data entred AaAtOVwAJd by 9093 : 1925 
+query maker 9093: generateing query : gDx1Vlcwoj 
+data entred gDx1Vlcwoj by 9093 : 1938 
+query maker 9093: generateing query : GDrgHkdLgG 
+query maker 9093: generateing query : 1QQBjFwQff 
+data entred 1QQBjFwQff by 9093 : 2030 
+query maker 9093: generateing query : 4vTBwOXJlm 
+query maker 9093: generateing query : 210uiHOvs4 
+data entred 210uiHOvs4 by 9093 : 2058 
+query maker 9093: generateing query : btV25fIB5X 
+query maker 9093: generateing query : RatKM0zJKV 
+data entred RatKM0zJKV by 9093 : 2127 
+query maker 9093: generateing query : 5MW6heO5Kh 
+data entred 5MW6heO5Kh by 9093 : 2142 
+query maker 9093: generateing query : aWL5YQlGsq 
+query maker 9093: generateing query : EkB85n8E7S 
+data entred EkB85n8E7S by 9093 : 2231 
+query maker 9093: generateing query : AdFwjWL72v 
+query maker 9093: generateing query : ods9jq0E7s 
+data entred ods9jq0E7s by 9093 : 2259 
+query maker 9093: generateing query : 5MMGUR32wa 
+query maker 9093: generateing query : V6oADHxpOz 
+data entred V6oADHxpOz by 9093 : 2326 
+query maker 9093: generateing query : VdMnn6OoKV 
+data entred VdMnn6OoKV by 9093 : 2341 
+query maker 9093: generateing query : QPIDwCvzF1 
+data entred QPIDwCvzF1 by 9093 : 2354 
+query maker 9093: generateing query : KB88cMQJbF 
+query maker 9093: generateing query : j6T6tgchEW 
+data entred j6T6tgchEW by 9093 : 2432 
+query maker 9093: generateing query : dvMW8iyDSe 
+query maker 9093: generateing query : FDPOL1ACLM 
+data entred FDPOL1ACLM by 9093 : 2460 
+query maker 9093: generateing query : h4SabmrnE6 
+query maker 9093: generateing query : kRB6NKomog 
+data entred kRB6NKomog by 9093 : 2527 
+query maker 9093: generateing query : B4TqSFstid 
+data entred B4TqSFstid by 9093 : 2540 
+query maker 9093: generateing query : fzi7KtubR8 
+data entred fzi7KtubR8 by 9093 : 2552 
+query maker 9093: generateing query : ib0ThOEGa2 
+query maker 9093: generateing query : XM7RcZxFsP 
+data entred XM7RcZxFsP by 9093 : 2633 
+query maker 9093: generateing query : TIpbP9Fklx 
+query maker 9093: generateing query : sDIsx0gbGr 
+data entred sDIsx0gbGr by 9093 : 2661 
+query maker 9093: generateing query : eEdlvql35O 
+query maker 9093: generateing query : SZwhbmrQGM 
+data entred SZwhbmrQGM by 9093 : 2729 
+query maker 9093: generateing query : n8q6BX6R9N 
+data entred n8q6BX6R9N by 9093 : 2744 
+query maker 9093: generateing query : josxKYX513 
+query maker 9093: generateing query : TT2pbdMC4s 
+data entred TT2pbdMC4s by 9093 : 2836 
+query maker 9093: generateing query : psBPycNF4X 
+data entred psBPycNF4X by 9093 : 2848 
+query maker 9093: generateing query : tnmVU6TSbV 
+data entred tnmVU6TSbV by 9093 : 2861 
+query maker 9093: generateing query : V5OYv0bhCg 
+query maker 9093: generateing query : K2IlShyFXC 
+data entred K2IlShyFXC by 9093 : 2931 
+query maker 9093: generateing query : Dq0ZmV6gNi 
+data entred QGM is completed at 2726 by 2 
+Processing of Query : SZwhbmrQGM is completed at 2738 by 3 
+Processing of Query : n8q6BX6R9N is completed at 2750 by 4 
+Processing of Query : tnmVU6TSbV is completed at 2816 by 1 
+Processing of Query : V5OYv0bhCg is completed at 2822 by 0 
+Processing of Query : psBPycNF4X is completed at 2827 by 2 
+Processing of Query : TT2pbdMC4s is completed at 2838 by 3 
+Processing of Query : bJn0HT0SaD is completed at 2850 by 4 
+Processing of Query : psBPycNF4X is completed at 2917 by 1 
+Processing of Query : tnmVU6TSbV is completed at 2923 by 0 
+Processing of Query : Dq0ZmV6gNi is completed at 2927 by 2 
+Processing of Query : sRxsRUnXab is completed at 2938 by 3 
+Processing of Query : Dq0ZmV6gNi is completed at 2950 by 4 
+Processing of Query : bJn0HT0SaD is completed at 3017 by 1 
+Processing of Query : 1ECHwTeFIs is completed at 3024 by 0 
+Processing of Query : K2IlShyFXC is completed at 3028 by 2 
+Processing of Query : dnM808Kwwf is completed at 3039 by 3 
+Processing of Query : dxTQepJt5s is completed at 3051 by 4 
+Processing of Query : fmUCmCwnvH is completed at 3118 by 1 
+Processing of Query : 1ECHwTeFIs is completed at 3124 by 0 
+Processing of Query : sRxsRUnXab is completed at 3129 by 2 
+Processing of Query : SvYEDZNovj is completed at 3139 by 3 
+Processing of Query : dxTQepJt5s is completed at 3151 by 4 
+Processing of Query : DJRxA6Wkz2 is completed at 3218 by 1 
+Processing of Query : MwVqM8HeB0 is completed at 3225 by 0 
+Processing of Query : dnM808Kwwf is completed at 3230 by 2 
+Processing of Query : SvYEDZNovj is completed at 3240 by 3 
+Processing of Query : IJiE95MRkn is completed at 3252 by 4 
+Processing of Query : DJRxA6Wkz2 is completed at 3319 by 1 
+Processing of Query : MwVqM8HeB0 is completed at 3325 by 0 
+Processing of Query : fc16JCdGWM is completed at 3330 by 2 
+Processing of Query : 09j1g2EtIA is completed at 3340 by 3 
+Processing of Query : IJiE95MRkn is completed at 3352 by 4 
+Processing of Query : gqjz4tFRkZ is completed at 3419 by 1 
+Processing of Query : fc76A358LZ is completed at 3426 by 0 
+Processing of Query : fc16JCdGWM is completed at 3431 by 2 
+Processing of Query : 09j1g2EtIA is completed at 3441 by 3 
+Processing of Query : nWlv2Vz74k is completed at 3453 by 4 
+Processing of Query : 6k6fTUFumy is completed at 3520 by 1 
+Processing of Query : fc76A358LZ is completed at 3526 by 0 
+Processing of Query : 29KlJPOoG9 is completed at 3532 by 2 
+Processing of Query : Hd02J2Yia2 is completed at 3541 by 3 
+Processing of Query : nWlv2Vz74k is completed at 3553 by 4 
+Processing of Query : DhmJxfEcJ0 is completed at 3621 by 1 
+Processing of Query : Lxot58VsGL is completed at 3627 by 0 
+Processing of Query : 29KlJPOoG9 is completed at 3632 by 2 
+Processing of Query : NoIxJrnyQ4 is completed at 3642 by 3 
+Processing of Query : 2xkq1pyWSf is completed at 3654 by 4 
+Processing of Query : IoEHV5qvur is completed at 3721 by 1 
+Processing of Query : DhmJxfEcJ0 is completed at 3728 by 0 
+Processing of Query : rE1Noz32MN is completed at 3733 by 2 
+Processing of Query : woZxrIzp0K is completed at 3742 by 3 
+Processing of Query : rE1Noz32MN is completed at 3754 by 4 
+Processing of Query : NRCrzxwZ31 is completed at 3822 by 1 
+Processing of Query : qjYwCIZtwv is completed at 3828 by 0 
+Processing of Query : BxaVYclx8d is completed at 3834 by 2 
+Processing of Query : IoEHV5qvur is completed at 3842 by 3 
+Processing of Query : mt8kZK3Zez is completed at 3855 by 4 
+Processing of Query : gW5iKtRNvD is completed at 3922 by 1 
+Processing of Query : BxaVYclx8d is completed at 3929 by 0 
+Processing of Query : BludN3Lk2O is completed at 3934 by 2 
+Processing of Query : JKtdXggIAj is completed at 3943 by 3 
+Processing of Query : 672h31toyC is completed at 3955 by 4 
+Processing of Query : xWNGhNrkMF is completed at 4023 by 1 
+Processing of Query : Uh0BODmnJv is completed at 4029 by 0 
+Processing of Query : qjYwCIZtwv is completed at 4035 by 2 
+Processing of Query : guL3b3QCnD is completed at 4043 by 3 
+Processing of Query : ihUjTJXf6H is completed at 4055 by 4 
+Processing of Query : ulHxCKy687 is completedg 
+data entred V5OYv0bhCg by 9095 : 2765 
+query maker 9095: generateing query : K2IlShyFXC 
+query maker 9095: generateing query : Dq0ZmV6gNi 
+data entred Dq0ZmV6gNi by 9095 : 2830 
+query maker 9095: generateing query : bJn0HT0SaD 
+data entred bJn0HT0SaD by 9095 : 2844 
+query maker 9095: generateing query : 9VFRhx9Pd7 
+query maker 9095: generateing query : sRxsRUnXab 
+data entred sRxsRUnXab by 9095 : 2935 
+query maker 9095: generateing query : fmUCmCwnvH 
+query maker 9095: generateing query : 1ECHwTeFIs 
+data entred 1ECHwTeFIs by 9095 : 2963 
+query maker 9095: generateing query : MakkDbf18p 
+query maker 9095: generateing query : dnM808Kwwf 
+data entred dnM808Kwwf by 9095 : 3029 
+query maker 9095: generateing query : dxTQepJt5s 
+data entred dxTQepJt5s by 9095 : 3044 
+query maker 9095: generateing query : WSDgdhrsiA 
+query maker 9095: generateing query : SvYEDZNovj 
+data entred SvYEDZNovj by 9095 : 3137 
+query maker 9095: generateing query : DJRxA6Wkz2 
+data entred DJRxA6Wkz2 by 9095 : 3150 
+query maker 9095: generateing query : MwVqM8HeB0 
+data entred MwVqM8HeB0 by 9095 : 3162 
+query maker 9095: generateing query : OtwN7aMVyi 
+query maker 9095: generateing query : fc16JCdGWM 
+data entred fc16JCdGWM by 9095 : 3230 
+query maker 9095: generateing query : IJiE95MRkn 
+data entred IJiE95MRkn by 9095 : 3246 
+query maker 9095: generateing query : R8QoVYyHU7 
+query maker 9095: generateing query : 09j1g2EtIA 
+data entred 09j1g2EtIA by 9095 : 3339 
+query maker 9095: generateing query : gqjz4tFRkZ 
+data entred gqjz4tFRkZ by 9095 : 3352 
+query maker 9095: generateing query : fc76A358LZ 
+data entred fc76A358LZ by 9095 : 3364 
+query maker 9095: generateing query : fL8yNpBrTj 
+query maker 9095: generateing query : 29KlJPOoG9 
+data entred 29KlJPOoG9 by 9095 : 3431 
+query maker 9095: generateing query : nWlv2Vz74k 
+data entred nWlv2Vz74k by 9095 : 3445 
+query maker 9095: generateing query : 6k6fTUFumy 
+data entred 6k6fTUFumy by 9095 : 3457 
+query maker 9095: generateing query : NoIxJrnyQ4 
+query maker 9095: generateing query : Hd02J2Yia2 
+data entred Hd02J2Yia2 by 9095 : 3540 
+query maker 9095: generateing query : DhmJxfEcJ0 
+data entred DhmJxfEcJ0 by 9095 : 3553 
+query maker 9095: generateing query : Lxot58VsGL 
+data entred Lxot58VsGL by 9095 : 3565 
+query maker 9095: generateing query : woZxrIzp0K 
+query maker 9095: generateing query : rE1Noz32MN 
+data entred rE1Noz32MN by 9095 : 3633 
+query maker 9095: generateing query : 2xkq1pyWSf 
+data entred 2xkq1pyWSf by 9095 : 3645 
+query maker 9095: generateing query : IoEHV5qvur 
+data entred IoEHV5qvur by 9095 : 3658 
+query maker 9095: generateing query : gW5iKtRNvD 
+query maker 9095: generateing query : BxaVYclx8d 
+data entred BxaVYclx8d by 9095 : 3743 
+query maker 9095: generateing query : NRCrzxwZ31 
+data entred NRCrzxwZ31 by 9095 : 3755 
+query maker 9095: generateing query : qjYwCIZtwv 
+data entred qjYwCIZtwv by 9095 : 3768 
+query maker 9095: generateing query : 672h31toyC 
+query maker 9095: generateing query : BludN3Lk2O 
+data entred BludN3Lk2O by 9095 : 3834 
+query maker 9095: generateing query : mt8kZK3Zez 
+data entred mt8kZK3Zez by 9095 : 3846 
+query maker 9095: generateing query : ulHxCKy687 
+query maker 9095: generateing query : JKtdXggIAj 
+data entred JKtdXggIAj by 9095 : 3941 
+query maker 9095: generateing query : xWNGhNrkMF 
+data entred xWNGhNrkMF by 9095 : 3953 
+query maker 9095: generateing query : Uh0BODmnJv 
+data entred Uh0BODmnJv by 9095 : 3966 
+query maker 9095: generateing query : vsfYGdeWWP 
+query maker 9095: generateing query : guL3b3QCnD 
+data entred guL3b3QCnD by 9095 : 4035 
+query maker 9095: generateing query : ihUjTJXf6H 
+data entred ihUjTJXf6H by 9095 : 4048 
+query maker 9095: generateing query : LBa0zQeOMa 
+query maker 9095: generateing query : D2Ep6PsWsQ 
+data entred D2Ep6PsWsQ by 9095 : 4142 
+query maker 9095: generateing query : zL7t50d2gj 
+data entred zL7t50d2gj by 9095 : 4154 
+query maker 9095: generateing query : J1VT2vKgkx 
+data entred J1VT2vKgkx by 9095 : 4166 
+query maker 9095: generateing query : qYz5nGVQCn 
+query maker 9095: generateing query : Gc9NGeOTg5 
+Dq0ZmV6gNi by 9093 : 2943 
+query maker 9093: generateing query : bJn0HT0SaD 
+data entred bJn0HT0SaD by 9093 : 2956 
+query maker 9093: generateing query : 9VFRhx9Pd7 
+query maker 9093: generateing query : sRxsRUnXab 
+data entred sRxsRUnXab by 9093 : 3038 
+query maker 9093: generateing query : fmUCmCwnvH 
+data entred fmUCmCwnvH by 9093 : 3050 
+query maker 9093: generateing query : 1ECHwTeFIs 
+data entred 1ECHwTeFIs by 9093 : 3063 
+query maker 9093: generateing query : MakkDbf18p 
+query maker 9093: generateing query : dnM808Kwwf 
+data entred dnM808Kwwf by 9093 : 3130 
+query maker 9093: generateing query : dxTQepJt5s 
+data entred dxTQepJt5s by 9093 : 3145 
+query maker 9093: generateing query : WSDgdhrsiA 
+query maker 9093: generateing query : SvYEDZNovj 
+data entred SvYEDZNovj by 9093 : 3239 
+query maker 9093: generateing query : DJRxA6Wkz2 
+data entred DJRxA6Wkz2 by 9093 : 3251 
+query maker 9093: generateing query : MwVqM8HeB0 
+data entred MwVqM8HeB0 by 9093 : 3264 
+query maker 9093: generateing query : OtwN7aMVyi 
+query maker 9093: generateing query : fc16JCdGWM 
+data entred fc16JCdGWM by 9093 : 3331 
+query maker 9093: generateing query : IJiE95MRkn 
+data entred IJiE95MRkn by 9093 : 3346 
+query maker 9093: generateing query : R8QoVYyHU7 
+query maker 9093: generateing query : 09j1g2EtIA 
+data entred 09j1g2EtIA by 9093 : 3438 
+query maker 9093: generateing query : gqjz4tFRkZ 
+query maker 9093: generateing query : fc76A358LZ 
+data entred fc76A358LZ by 9093 : 3465 
+query maker 9093: generateing query : fL8yNpBrTj 
+query maker 9093: generateing query : 29KlJPOoG9 
+data entred 29KlJPOoG9 by 9093 : 3533 
+query maker 9093: generateing query : nWlv2Vz74k 
+data entred nWlv2Vz74k by 9093 : 3547 
+query maker 9093: generateing query : 6k6fTUFumy 
+query maker 9093: generateing query : NoIxJrnyQ4 
+data entred NoIxJrnyQ4 by 9093 : 3639 
+query maker 9093: generateing query : Hd02J2Yia2 
+query maker 9093: generateing query : DhmJxfEcJ0 
+data entred DhmJxfEcJ0 by 9093 : 3666 
+query maker 9093: generateing query : Lxot58VsGL 
+query maker 9093: generateing query : woZxrIzp0K 
+data entred woZxrIzp0K by 9093 : 3736 
+query maker 9093: generateing query : rE1Noz32MN 
+data entred rE1Noz32MN by 9093 : 3749 
+query maker 9093: generateing query : 2xkq1pyWSf 
+query maker 9093: generateing query : IoEHV5qvur 
+data entred IoEHV5qvur by 9093 : 3840 
+query maker 9093: generateing query : gW5iKtRNvD 
+data entred gW5iKtRNvD by 9093 : 3853 
+query maker 9093: generateing query : BxaVYclx8d 
+data entred BxaVYclx8d by 9093 : 3865 
+query maker 9093: generateing query : NRCrzxwZ31 
+query maker 9093: generateing query : qjYwCIZtwv 
+data entred qjYwCIZtwv by 9093 : 3934 
+query maker 9093: generateing query : 672h31toyC 
+data entred 672h31toyC by 9093 : 3947 
+query maker 9093: generateing query : BludN3Lk2O 
+query maker 9093: generateing query : mt8kZK3Zez 
+data entred mt8kZK3Zez by 9093 : 4043 
+query maker 9093: generateing query : ulHxCKy687 
+data entred ulHxCKy687 by 9093 : 4056 
+query maker 9093: generateing query : JKtdXggIAj 
+data entred JKtdXggIAj by 9093 : 4068 
+query maker 9093: generateing query : xWNGhNrkMF 
+query maker 9093: generateing query : Uh0BODmnJv 
+data entred Uh0BODmnJv by 9093 : 4135 
+query maker 9093: generateing query : vsfYGdeWWP 
+data entred vsfYGdeWWP by 9093 : 4148 
+query maker 9093: generateing query : guL3b3QCnD 
+query maker 9093: generateing query : ihUjTJXf6H 
+data entred ihUjTJXf6H by 9093 : 4242 
+query maker 9093: generateing query : LBa0zQeOMa 
+data entred LBa0zQeOMa by 9093 : 4255 
+query maker 9093: generateing query : D2Ep6PsWsQ 
+data entred D2Ep6PsWsQ by 9093 : 4267 
+query maker 9093: generateing query : zL7t50d2gj 
+query maker 9093: generateing query : J1VT2vKgkx 
+data entred J1VT2vKgkx by 9093 : 4336 
+query maker 9093: generateing query : qYz5nGVQCn 
+data entred qYz5nGVQCn by 9093 : 4349 
+query maker 9093: generateing query : Gc9NGeOTg5 
+query maker 9093: generateing query : d079U9EEqZ 
+data entred d079U9EEqZ by 9093 : 4443 
+query maker 9093: generateing query : bRXLXkrSb3 
+data entred bRXLXkrSb3 by 9093 : 4456 
+query maker 909 at 4123 by 1 
+Processing of Query : JKtdXggIAj is completed at 4130 by 0 
+Processing of Query : mt8kZK3Zez is completed at 4135 by 2 
+Processing of Query : D2Ep6PsWsQ is completed at 4144 by 3 
+Processing of Query : vsfYGdeWWP is completed at 4156 by 4 
+Processing of Query : zL7t50d2gj is completed at 4224 by 1 
+Processing of Query : J1VT2vKgkx is completed at 4230 by 0 
+Processing of Query : Uh0BODmnJv is completed at 4236 by 2 
+Processing of Query : ihUjTJXf6H is completed at 4244 by 3 
+Processing of Query : d079U9EEqZ is completed at 4256 by 4 
+Processing of Query : LBa0zQeOMa is completed at 4324 by 1 
+Processing of Query : D2Ep6PsWsQ is completed at 4331 by 0 
+Processing of Query : Gc9NGeOTg5 is completed at 4336 by 2 
+Processing of Query : gRfpFWEuPU is completed at 4345 by 3 
+Processing of Query : qYz5nGVQCn is completed at 4357 by 4 
+Processing of Query : z2VHbPRQth is completed at 4425 by 1 
+Processing of Query : PE9Mp67QZi is completed at 4431 by 0 
+Processing of Query : J1VT2vKgkx is completed at 4436 by 2 
+Processing of Query : d079U9EEqZ is completed at 4445 by 3 
+Processing of Query : KQ6TDvZKmY is completed at 4457 by 4 
+Processing of Query : bRXLXkrSb3 is completed at 4525 by 1 
+Processing of Query : gRfpFWEuPU is completed at 4532 by 0 
+Processing of Query : eTY9AaYs0r is completed at 4537 by 2 
+Processing of Query : ssfrBQBAiC is completed at 4545 by 3 
+Processing of Query : Uf9aFP6jjV is completed at 4557 by 4 
+Processing of Query : 22s8V5DVQZ is completed at 4626 by 1 
+Processing of Query : USg85G37dg is completed at 4632 by 0 
+Processing of Query : PE9Mp67QZi is completed at 4637 by 2 
+Processing of Query : KQ6TDvZKmY is completed at 4646 by 3 
+Processing of Query : JECZNHGQPT is completed at 4658 by 4 
+Processing of Query : 2gecqU1wdl is completed at 4726 by 1 
+Processing of Query : ssfrBQBAiC is completed at 4733 by 0 
+Processing of Query : kXSN5OSJKJ is completed at 4738 by 2 
+Processing of Query : oJ4hwa6pUQ is completed at 4746 by 3 
+Processing of Query : sGJI7lyIVQ is completed at 4758 by 4 
+Processing of Query : 8DuLCisi8h is completed at 4827 by 1 
+Processing of Query : cfzL6zsh8R is completed at 4833 by 0 
+Processing of Query : USg85G37dg is completed at 4838 by 2 
+Processing of Query : JECZNHGQPT is completed at 4847 by 3 
+Processing of Query : cjWL52lyku is completed at 4859 by 4 
+Processing of Query : 7izQ0Gbyp7 is completed at 4927 by 1 
+Processing of Query : oJ4hwa6pUQ is completed at 4934 by 0 
+Processing of Query : LGbfrOyU7G is completed at 4939 by 2 
+Processing of Query : ownAMPpkKw is completed at 4947 by 3 
+Processing of Query : oxBtO8EUxy is completed at 4959 by 4 
+Processing of Query : 0WQXIW03uk is completed at 5028 by 1 
+Processing of Query : yU3zVgp47a is completed at 5035 by 0 
+Processing of Query : cfzL6zsh8R is completed at 5039 by 2 
+Processing of Query : 2NFTKnPLrk is completed at 5048 by 3 
+Processing of Query : 5Ze9zaqYfx is completed at 5060 by 4 
+Processing of Query : pJ11cP9QKG is completed at 5128 by 1 
+Processing of Query : ownAMPpkKw is completed at 5135 by 0 
+Processing of Query : cjWL52lyku is completed at 5140 by 2 
+Processing of Query : TJQzCBWrmo is completed at 5148 by 3 
+Processing of Query : LwG96sZvMJ is completed at 5160 by 4 
+Processing of Query : Lso0CXb2Vq is completed at 5229 by 1 
+Processing of Query : A4rESCP9Mv is completed at 5236 by 0 
+Processing of Query : yU3zVgp47a is completed at 5240 by 2 
+Processing of Query : 5Ze9zaqYfx is completed at 5249 by 3 
+Processing of Query : GKX7oQKdZw is completed at 5261 by 4 
+Processing of Query : 813OaagaG3 is completed at 5329 by 1 
+Processing of Query : TJQzCBWrmo is completed at 5336 by 0 
+Processing of Query : A4uZ46Xf9T is completed at 5341 by 2 
+Processing of Query : VeapefwbvG is completed at 5349 by 3 
+Processing of Query : cFe3fQEci1 is completed at 5361 by 4 
+Processing of Query : 5bq2jPT33S is completed at 5430 by 1 
+Processing of Query : AM4MKieycS is completed at 5436 by 0 
+Processing of Query : A4rESCP9Mv is completed at 5441 by 2 
+Processing of Query : GKX7oQKdZw is completed at 5450 by 3 
+Pdata entred Gc9NGeOTg5 by 9095 : 4236 
+query maker 9095: generateing query : d079U9EEqZ 
+data entred d079U9EEqZ by 9095 : 4248 
+query maker 9095: generateing query : bRXLXkrSb3 
+query maker 9095: generateing query : gRfpFWEuPU 
+data entred gRfpFWEuPU by 9095 : 4343 
+query maker 9095: generateing query : z2VHbPRQth 
+data entred z2VHbPRQth by 9095 : 4355 
+query maker 9095: generateing query : PE9Mp67QZi 
+data entred PE9Mp67QZi by 9095 : 4367 
+query maker 9095: generateing query : Uf9aFP6jjV 
+query maker 9095: generateing query : eTY9AaYs0r 
+data entred eTY9AaYs0r by 9095 : 4437 
+query maker 9095: generateing query : KQ6TDvZKmY 
+data entred KQ6TDvZKmY by 9095 : 4449 
+query maker 9095: generateing query : 2gecqU1wdl 
+query maker 9095: generateing query : ssfrBQBAiC 
+data entred ssfrBQBAiC by 9095 : 4545 
+query maker 9095: generateing query : 22s8V5DVQZ 
+data entred 22s8V5DVQZ by 9095 : 4557 
+query maker 9095: generateing query : USg85G37dg 
+data entred USg85G37dg by 9095 : 4569 
+query maker 9095: generateing query : sGJI7lyIVQ 
+query maker 9095: generateing query : kXSN5OSJKJ 
+data entred kXSN5OSJKJ by 9095 : 4638 
+query maker 9095: generateing query : JECZNHGQPT 
+data entred JECZNHGQPT by 9095 : 4650 
+query maker 9095: generateing query : 7izQ0Gbyp7 
+query maker 9095: generateing query : oJ4hwa6pUQ 
+data entred oJ4hwa6pUQ by 9095 : 4745 
+query maker 9095: generateing query : 8DuLCisi8h 
+data entred 8DuLCisi8h by 9095 : 4757 
+query maker 9095: generateing query : cfzL6zsh8R 
+data entred cfzL6zsh8R by 9095 : 4770 
+query maker 9095: generateing query : oxBtO8EUxy 
+query maker 9095: generateing query : LGbfrOyU7G 
+data entred LGbfrOyU7G by 9095 : 4839 
+query maker 9095: generateing query : cjWL52lyku 
+data entred cjWL52lyku by 9095 : 4851 
+query maker 9095: generateing query : pJ11cP9QKG 
+query maker 9095: generateing query : ownAMPpkKw 
+data entred ownAMPpkKw by 9095 : 4946 
+query maker 9095: generateing query : 0WQXIW03uk 
+data entred 0WQXIW03uk by 9095 : 4958 
+query maker 9095: generateing query : yU3zVgp47a 
+data entred yU3zVgp47a by 9095 : 4971 
+query maker 9095: generateing query : LwG96sZvMJ 
+query maker 9095: generateing query : 2NFTKnPLrk 
+data entred 2NFTKnPLrk by 9095 : 5040 
+query maker 9095: generateing query : 5Ze9zaqYfx 
+data entred 5Ze9zaqYfx by 9095 : 5055 
+query maker 9095: generateing query : 813OaagaG3 
+query maker 9095: generateing query : TJQzCBWrmo 
+data entred TJQzCBWrmo by 9095 : 5147 
+query maker 9095: generateing query : Lso0CXb2Vq 
+data entred Lso0CXb2Vq by 9095 : 5160 
+query maker 9095: generateing query : A4rESCP9Mv 
+data entred A4rESCP9Mv by 9095 : 5172 
+query maker 9095: generateing query : cFe3fQEci1 
+query maker 9095: generateing query : A4uZ46Xf9T 
+data entred A4uZ46Xf9T by 9095 : 5241 
+query maker 9095: generateing query : GKX7oQKdZw 
+data entred GKX7oQKdZw by 9095 : 5253 
+query maker 9095: generateing query : JbcXerOTE6 
+query maker 9095: generateing query : VeapefwbvG 
+data entred VeapefwbvG by 9095 : 5348 
+query maker 9095: generateing query : 5bq2jPT33S 
+data entred 5bq2jPT33S by 9095 : 5361 
+query maker 9095: generateing query : AM4MKieycS 
+data entred AM4MKieycS by 9095 : 5373 
+query maker 9095: generateing query : F77Qwm53yA 
+query maker 9095: generateing query : JDM9G5Yz81 
+data entred JDM9G5Yz81 by 9095 : 5442 
+query maker 9095: generateing query : rIOvvzOK81 
+data entred rIOvvzOK81 by 9095 : 5454 
+query maker 9095: generateing query : CN8KEF6KIE 
+query maker 9095: generateing query : lri7AYczyk 
+data entred lri7AYczyk by 9095 : 5549 
+query maker 9095: generateing query : B03qwyZli7 
+data entred B03qwyZli7 by 9095 : 5562 
+query maker 9095: generateing query : mVVuFzaMjS 
+data entred mVVuFzaMjS by 9095 : 5574 
+query maker 9095: generateing query : rEkKLVJXuh 
+query maker 9095: generateing query : i6hlwOUv9c 
+data entred i6hlwOUv9c by 9095 : 5643 
+query maker 9095: generateing query : Dv7y0N8bAr 
+data entred Dv7y0N8bAr by 9095 : 5655 
+query maker 9095: generateing query : 316oLSjuQN 
+query maker 9095: generateing query : M8U4uqSoW2 
+data entred M8U4uqSoW2 by 9095 : 5750 
+query maker 903: generateing query : gRfpFWEuPU 
+data entred gRfpFWEuPU by 9093 : 4468 
+query maker 9093: generateing query : z2VHbPRQth 
+query maker 9093: generateing query : PE9Mp67QZi 
+data entred PE9Mp67QZi by 9093 : 4539 
+query maker 9093: generateing query : Uf9aFP6jjV 
+data entred Uf9aFP6jjV by 9093 : 4551 
+query maker 9093: generateing query : eTY9AaYs0r 
+query maker 9093: generateing query : KQ6TDvZKmY 
+data entred KQ6TDvZKmY by 9093 : 4644 
+query maker 9093: generateing query : 2gecqU1wdl 
+data entred 2gecqU1wdl by 9093 : 4657 
+query maker 9093: generateing query : ssfrBQBAiC 
+data entred ssfrBQBAiC by 9093 : 4669 
+query maker 9093: generateing query : 22s8V5DVQZ 
+query maker 9093: generateing query : USg85G37dg 
+data entred USg85G37dg by 9093 : 4738 
+query maker 9093: generateing query : sGJI7lyIVQ 
+data entred sGJI7lyIVQ by 9093 : 4751 
+query maker 9093: generateing query : kXSN5OSJKJ 
+query maker 9093: generateing query : JECZNHGQPT 
+data entred JECZNHGQPT by 9093 : 4845 
+query maker 9093: generateing query : 7izQ0Gbyp7 
+data entred 7izQ0Gbyp7 by 9093 : 4858 
+query maker 9093: generateing query : oJ4hwa6pUQ 
+data entred oJ4hwa6pUQ by 9093 : 4870 
+query maker 9093: generateing query : 8DuLCisi8h 
+query maker 9093: generateing query : cfzL6zsh8R 
+data entred cfzL6zsh8R by 9093 : 4939 
+query maker 9093: generateing query : oxBtO8EUxy 
+data entred oxBtO8EUxy by 9093 : 4952 
+query maker 9093: generateing query : LGbfrOyU7G 
+query maker 9093: generateing query : cjWL52lyku 
+data entred cjWL52lyku by 9093 : 5049 
+query maker 9093: generateing query : pJ11cP9QKG 
+data entred pJ11cP9QKG by 9093 : 5064 
+query maker 9093: generateing query : ownAMPpkKw 
+data entred ownAMPpkKw by 9093 : 5078 
+query maker 9093: generateing query : 0WQXIW03uk 
+query maker 9093: generateing query : yU3zVgp47a 
+data entred yU3zVgp47a by 9093 : 5140 
+query maker 9093: generateing query : LwG96sZvMJ 
+data entred LwG96sZvMJ by 9093 : 5153 
+query maker 9093: generateing query : 2NFTKnPLrk 
+query maker 9093: generateing query : 5Ze9zaqYfx 
+data entred 5Ze9zaqYfx by 9093 : 5248 
+query maker 9093: generateing query : 813OaagaG3 
+data entred 813OaagaG3 by 9093 : 5260 
+query maker 9093: generateing query : TJQzCBWrmo 
+data entred TJQzCBWrmo by 9093 : 5273 
+query maker 9093: generateing query : Lso0CXb2Vq 
+query maker 9093: generateing query : A4rESCP9Mv 
+data entred A4rESCP9Mv by 9093 : 5341 
+query maker 9093: generateing query : cFe3fQEci1 
+data entred cFe3fQEci1 by 9093 : 5354 
+query maker 9093: generateing query : A4uZ46Xf9T 
+query maker 9093: generateing query : GKX7oQKdZw 
+data entred GKX7oQKdZw by 9093 : 5449 
+query maker 9093: generateing query : JbcXerOTE6 
+data entred JbcXerOTE6 by 9093 : 5461 
+query maker 9093: generateing query : VeapefwbvG 
+data entred VeapefwbvG by 9093 : 5473 
+query maker 9093: generateing query : 5bq2jPT33S 
+query maker 9093: generateing query : AM4MKieycS 
+data entred AM4MKieycS by 9093 : 5542 
+query maker 9093: generateing query : F77Qwm53yA 
+data entred F77Qwm53yA by 9093 : 5555 
+query maker 9093: generateing query : JDM9G5Yz81 
+query maker 9093: generateing query : rIOvvzOK81 
+data entred rIOvvzOK81 by 9093 : 5650 
+query maker 9093: generateing query : CN8KEF6KIE 
+data entred CN8KEF6KIE by 9093 : 5662 
+query maker 9093: generateing query : lri7AYczyk 
+data entred lri7AYczyk by 9093 : 5674 
+query maker 9093: generateing query : B03qwyZli7 
+query maker 9093: generateing query : mVVuFzaMjS 
+data entred mVVuFzaMjS by 9093 : 5743 
+query maker 9093: generateing query : rEkKLVJXuh 
+data entred rEkKLVJXuh by 9093 : 5756 
+query maker 9093: generateing query : i6hlwOUv9c 
+query maker 9093: generateing query : Dv7y0N8bAr 
+data entred Dv7y0N8bAr by 9093 : 5853 
+query maker 9093: generateing query : 316oLSjuQN 
+data entred 316oLSjuQN by 9093 : 5865 
+query maker 9093: generateing query : M8U4uqSoW2 
+data entred M8U4uqSoW2 by 9093 : 5878 
+query maker 9093: generateing query : BAxI8ywgJ6 
+query maker 9093: generateing query : IN8ObUGupw 
+data entred IN8ObUGupw by 9093 : 5944 
+query maker 9093: generateing query : ibFcgaD8yz 
+data entred ibFcga
